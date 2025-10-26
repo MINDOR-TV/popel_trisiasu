@@ -1,0 +1,49 @@
+:root{
+  --sidebar-w: 280px;
+  --bg: #0f0f0f;
+  --ink: #e8e8e8;
+  --muted:#bdbdbd;
+  --line:#2a2a2a;
+  --accent:#b5ff5a; /* jen pro zvýraznění odkazů, později doladíme */
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg); color:var(--ink); font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji","Segoe UI Emoji";}
+
+.sidebar{
+  position:fixed; inset:0 auto 0 0; width:var(--sidebar-w); overflow:auto;
+  border-right:1px solid var(--line); background:#121212;
+}
+.sidebar__header{display:flex; align-items:center; gap:10px; padding:12px 14px; border-bottom:1px solid var(--line); position:sticky; top:0; background:#121212;}
+.sidebar__toggle{display:none}
+
+.brand{color:var(--ink); text-decoration:none; font-weight:700}
+
+.menu{padding:14px}
+.menu__link, .menu__accordion{
+  display:block; width:100%; text-align:left; border:0; background:transparent;
+  color:var(--ink); text-decoration:none; padding:10px 6px; border-radius:6px; cursor:pointer;
+}
+.menu__link:hover, .menu__accordion:hover{background:#181818}
+.menu__link--strong{color:var(--accent); font-weight:600}
+
+.menu__group{margin:8px 0 12px}
+.menu__accordion{display:flex; align-items:center; justify-content:space-between; font-weight:700}
+.menu__panel{padding-left:8px; border-left:2px solid var(--line); margin:6px 0}
+.menu__panel[hidden]{display:none}
+.chev{opacity:.7}
+
+.content{
+  margin-left:var(--sidebar-w); padding:20px; min-height:100dvh;
+}
+.content__header{border-bottom:1px solid var(--line); padding-bottom:10px; margin-bottom:16px}
+.content__section{max-width:900px}
+
+@media (max-width: 860px){
+  .sidebar{transform:translateX(-100%); transition:.2s transform ease}
+  .sidebar.open{transform:translateX(0)}
+  .sidebar__toggle{display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--line); background:#181818; color:var(--ink); border-radius:6px}
+  .content{margin-left:0}
+  .sidebar__header{position:sticky; top:0}
+}
