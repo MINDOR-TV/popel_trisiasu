@@ -1,49 +1,65 @@
 :root{
   --sidebar-w: 280px;
-  --bg: #0f0f0f;
-  --ink: #e8e8e8;
-  --muted:#bdbdbd;
-  --line:#2a2a2a;
-  --accent:#b5ff5a; /* jen pro zvýraznění odkazů, později doladíme */
+  --bg:#0f0f0f; --ink:#e8e8e8; --muted:#bdbdbd;
+  --line:#2a2a2a; --accent:#b5ff5a;
 }
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{background:var(--bg); color:var(--ink); font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji","Segoe UI Emoji";}
+body{background:var(--bg); color:var(--ink); font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial}
+
+.topbar{
+  position:sticky; top:0; z-index:30;
+  display:flex; align-items:center; gap:10px;
+  padding:10px 14px; background:#121212; border-bottom:1px solid var(--line);
+}
+.topbar .brand{color:var(--ink); text-decoration:none; font-weight:700}
+#hamburger{
+  width:38px; height:38px; border-radius:8px; border:1px solid var(--line);
+  background:#181818; color:var(--ink); cursor:pointer;
+}
 
 .sidebar{
-  position:fixed; inset:0 auto 0 0; width:var(--sidebar-w); overflow:auto;
-  border-right:1px solid var(--line); background:#121212;
+  position:fixed; inset:0 auto 0 0; width:var(--sidebar-w);
+  background:#121212; border-right:1px solid var(--line);
+  transform:translateX(-100%); transition:transform .2s ease;
+  z-index:40; overflow:auto; padding:12px 12px 24px;
 }
-.sidebar__header{display:flex; align-items:center; gap:10px; padding:12px 14px; border-bottom:1px solid var(--line); position:sticky; top:0; background:#121212;}
-.sidebar__toggle{display:none}
+.sidebar.open{ transform:translateX(0) }
+.sidebar:focus{ outline:none }
 
-.brand{color:var(--ink); text-decoration:none; font-weight:700}
-
-.menu{padding:14px}
-.menu__link, .menu__accordion{
-  display:block; width:100%; text-align:left; border:0; background:transparent;
-  color:var(--ink); text-decoration:none; padding:10px 6px; border-radius:6px; cursor:pointer;
+.backdrop{
+  position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:35;
 }
-.menu__link:hover, .menu__accordion:hover{background:#181818}
-.menu__link--strong{color:var(--accent); font-weight:600}
+.backdrop[hidden]{ display:none }
 
+.menu{display:block}
 .menu__group{margin:8px 0 12px}
-.menu__accordion{display:flex; align-items:center; justify-content:space-between; font-weight:700}
-.menu__panel{padding-left:8px; border-left:2px solid var(--line); margin:6px 0}
-.menu__panel[hidden]{display:none}
-.chev{opacity:.7}
+.menu__accordion, .menu__link{
+  display:flex; align-items:center; justify-content:space-between;
+  width:100%; text-align:left; border:0; background:transparent; cursor:pointer;
+  color:var(--ink); text-decoration:none; padding:10px 8px; border-radius:6px;
+}
+.menu__link:hover, .menu__accordion:hover{ background:#181818 }
+.menu__link--strong{ color:var(--accent); font-weight:600 }
+.menu__panel{ padding-left:8px; border-left:2px solid var(--line); margin:6px 0 }
+.menu__panel[hidden]{ display:none }
+.chev{opacity:.75}
 
 .content{
-  margin-left:var(--sidebar-w); padding:20px; min-height:100dvh;
+  padding:20px; min-height:100dvh;
+  /* když je sidebar otevřený na desktopu, posuneme obsah – vyřeší JS přidáním třídy .content--shift */
 }
+.content.content--shift{ margin-left:var(--sidebar-w) }
+
+/* jednoduché panely */
 .content__header{border-bottom:1px solid var(--line); padding-bottom:10px; margin-bottom:16px}
 .content__section{max-width:900px}
+.panel{background:#141414; border:1px solid var(--line); border-radius:10px; padding:16px}
+.h{margin:24px 0 10px 0; color:var(--accent); border-bottom:1px solid var(--line); padding-bottom:6px}
 
-@media (max-width: 860px){
-  .sidebar{transform:translateX(-100%); transition:.2s transform ease}
-  .sidebar.open{transform:translateX(0)}
-  .sidebar__toggle{display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--line); background:#181818; color:var(--ink); border-radius:6px}
-  .content{margin-left:0}
-  .sidebar__header{position:sticky; top:0}
+/* volitelné – na hodně širokých displejích může sidebar zůstat přisazený při otevření */
+@media (min-width:1100px){
+  body.sidebar-pinned .sidebar{ transform:translateX(0) }
+  body.sidebar-pinned .content{ margin-left:var(--sidebar-w) }
 }
