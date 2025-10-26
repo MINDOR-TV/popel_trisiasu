@@ -84,101 +84,97 @@
   <main class="content">
     <header class="content__header">
       <h1>Cheatsheet</h1>
-      <p class="note">Rychlá nápověda k soubojům a základním mechanikám (D&D 5e, stručně).</p>
+      <p class="note">Přehled základních herních pravidel (D&D 5e).</p>
     </header>
 
-    <article class="content__section panel" id="utok">
-      <h2 class="h">Hod na útok</h2>
+    <section class="content__section panel">
+      <h2 class="h">Útok (Attack)</h2>
       <ul>
-        <li><strong>Zásah (to hit):</strong> d20 + <em>attack modifier</em> + případné bonusy.</li>
-        <li><strong>Attack modifier (zbraně nablízko):</strong> STR modifikátor + proficiency bonus (jen pokud máš zbraň ovládnutou) + bonus zbraně.</li>
-        <li><strong>Porovnání s AC:</strong> pokud je výsledek alespoň rovný cílovu <em>Armour Class</em>, zasáhl jsi.</li>
-        <li><strong>Poškození:</strong> kostka zbraně (d4–d12 dle zbraně) + DMG modifikátor + případné bonusy.</li>
-        <li><strong>DMG modifikátor:</strong> obvykle STR mod + bonus zbraně.</li>
-        <li><strong>Střelné zbraně:</strong> místo STR použij DEX mod. Máš-li u sebe přisedlého nepřítele, útočíš s nevýhodou.</li>
-        <li><strong>Finesse:</strong> můžeš místo STR použít DEX.</li>
-        <li><strong>Versatile:</strong> jedna či dvě ruce → odlišná kostka poškození.</li>
+        <li><strong>To Hit = d20 + attack modifier + bonusy.</strong></li>
+        <li><strong>Attack modifier (zbraň nablízko):</strong> STR mod + proficiency bonus (pokud umíš se zbraní) + bonus zbraně.</li>
+        <li><strong>Zásah:</strong> Pokud je výsledek ≥ AC cíle, zasáhneš.</li>
+        <li><strong>Damage = kostka zbraně + DMG mod + bonusy.</strong></li>
+        <li>DMG mod = STR mod + bonus zbraně.</li>
+        <li>Střelné zbraně používají DEX místo STR a mají nevýhodu, pokud máš nepřítele u sebe.</li>
+        <li><strong>Finesse:</strong> můžeš použít DEX místo STR.</li>
+        <li><strong>Versatile:</strong> odlišná kostka poškození v jedné či dvou rukách.</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="ac">
-      <h2 class="h">Armour Class (AC)</h2>
+    <section class="content__section panel">
+      <h2 class="h">AC (Armour Class)</h2>
       <ul>
-        <li>AC vyjadřuje, jak těžké je postavu zasáhnout.</li>
-        <li>Vychází z brnění (a štítu) a z DEX, pokud to typ brnění dovoluje.</li>
-        <li>Některá brnění snižují DEX bonus; těžká brnění dávají nevýhodu na Stealth.</li>
-        <li>Těžká brnění mohou vyžadovat vysokou STR (jinak je neunesete efektivně).</li>
-        <li><strong>Vzorec:</strong> AC brnění + přípustný DEX mod (+2 za štít).</li>
-        <li>Bez brnění: <strong>10 + DEX</strong>.</li>
-        <li>Na light/medium/heavy je potřeba mastery (proficiency); bez ní nevýhody na hody zahrnující STR/DEX a typicky nemůžeš kouzlit. :contentReference[oaicite:1]{index=1}</li>
+        <li>Určuje, jak těžké je tě zasáhnout.</li>
+        <li>Vychází z brnění a DEX modifikátoru (podle typu brnění).</li>
+        <li>Těžká brnění omezují DEX bonus a mívají nevýhodu na Stealth.</li>
+        <li>Těžká brnění mohou vyžadovat určitou STR.</li>
+        <li>Vzorec: AC brnění + přípustný DEX mod (+ 2 za štít).</li>
+        <li>Bez brnění: 10 + DEX.</li>
+        <li>Bez proficiency → nevýhody na hody zahrnující STR/DEX a nemůžeš kouzlit.</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="spell-to-hit">
-      <h2 class="h">Kouzlení: zásah (spell attack)</h2>
+    <section class="content__section panel">
+      <h2 class="h">Kouzlení – zásah</h2>
       <ul>
-        <li><strong>Hod:</strong> d20 + <em>spellcasting ability mod</em> + proficiency bonus.</li>
-        <li><strong>Schopnost podle classy:</strong> INT (wizard, eldritch knight, arcane trickster) · WIS (cleric, druid, ranger) · CHA (bard, paladin, sorcerer, warlock). :contentReference[oaicite:2]{index=2}</li>
+        <li>Hod = d20 + spellcasting ability mod + proficiency bonus.</li>
+        <li><strong>Ability podle classy:</strong> INT (wizard, eldritch knight, arcane trickster), WIS (cleric, druid, ranger), CHA (bard, paladin, sorcerer, warlock).</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="spell-save">
-      <h2 class="h">Kouzlení: odolání (saving throw)</h2>
+    <section class="content__section panel">
+      <h2 class="h">Kouzlení – odolání (Save)</h2>
       <ul>
-        <li>Některá kouzla zasáhnou automaticky, cíl však hází <em>save</em>.</li>
-        <li><strong>Obtížnost (DC):</strong> 8 + <em>spellcasting ability mod</em> + proficiency bonus + další bonusy. :contentReference[oaicite:3]{index=3}</li>
+        <li>Některá kouzla zasáhnou automaticky → cíl háže save.</li>
+        <li>DC = 8 + spellcasting ability mod + proficiency bonus (+ bonusy).</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="koncentrace">
+    <section class="content__section panel">
       <h2 class="h">Koncentrace</h2>
       <ul>
-        <li>Sesilatel udrží vždy jen jedno <em>koncentrační</em> kouzlo současně.</li>
-        <li>Koncentrace se přeruší, když: sesíláš jiné koncentrační kouzlo; utrpíš zranění; jsi zabit/omráčen.</li>
-        <li>Při zranění házíš CON save: proti DC 10 nebo polovině utrpěného zranění (vyšší z obou). Při více zásazích házíš víckrát. :contentReference[oaicite:4]{index=4}</li>
+        <li>Lze udržovat jen jedno koncentrační kouzlo najednou.</li>
+        <li>Koncentrace končí → seslání jiného koncentračního kouzla / zranění / smrt / omráčení.</li>
+        <li>Při zranění házej CON save proti DC 10 nebo polovině damage (vyšší z obou).</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="boj">
-      <h2 class="h">Jak probíhá souboj?</h2>
-      <p>Souboj je rozdělen na kola. Každé kolo hraješ jednou podle iniciativy (d20 + bonus k iniciativě, typicky DEX mod + proficiency, pokud to vaše pravidla používají). Začíná nejvyšší hod a pokračuje se k nejnižšímu. Některé efekty mohou iniciativu měnit. Délka kola je abstraktní. :contentReference[oaicite:5]{index=5}</p>
+    <section class="content__section panel">
+      <h2 class="h">Souboj</h2>
       <ul>
-        <li>V každém kole máš: <strong>1 akci</strong>, <strong>1 bonusovou akci</strong> a <strong>pohyb</strong>. Třídy/featy/kouzla to mohou upravit.</li>
+        <li>Probíhá v kolech → každý hraje 1× za kolo podle iniciativy (d20 + DEX mod + případný bonus).</li>
+        <li>Každé kolo má: 1 akci, 1 bonusovou akci a pohyb.</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="akce">
+    <section class="content__section panel">
       <h2 class="h">Akce</h2>
       <ul>
-        <li>Útok.</li>
+        <li>Útok (zbraň nebo kouzlo).</li>
         <li>Seslání kouzla.</li>
-        <li>Speciální manévry/pohyby (dle pravidel/featů).</li>
-        <li>Interakce s prostředím (podle DM). :contentReference[oaicite:6]{index=6}</li>
+        <li>Speciální manévry / pohyby.</li>
+        <li>Interakce s prostředím (dle DM).</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="bonusova-akce">
+    <section class="content__section panel">
       <h2 class="h">Bonusová akce</h2>
       <ul>
-        <li>Můžeš ji použít, jen když to výslovně umožňuje tvoje schopnost/kouzlo/feat.</li>
-        <li>V jednom kole obvykle jen jedna.</li>
-        <li>Např.: útok druhou zbraní; kouzlo se spotřebou „bonus action“; specifické manévry; jednoduché interakce (dle DM). :contentReference[oaicite:7]{index=7}</li>
+        <li>Pouze pokud to umožňuje schopnost / kouzlo / feat.</li>
+        <li>Jen jedna na kolo.</li>
+        <li>Příklady: útok druhou zbraní, bonusové kouzlo, manévr třídy.</li>
       </ul>
-    </article>
+    </section>
 
-    <article class="content__section panel" id="pohyb">
+    <section class="content__section panel">
       <h2 class="h">Pohyb</h2>
       <ul>
-        <li>Každé kolo můžeš urazit vzdálenost rovnou tvé rychlosti (<em>speed</em>).</li>
-        <li>Akce <strong>Dash</strong> rychlost zdvojnásobí pro dané kolo; některé schopnosti přidávají další pohyby.</li>
-        <li>Pohyb můžeš rozdělit (pohyb → akce → zbytek pohybu).</li>
-        <li>Terén může pohyb zhoršit. V jednodušších soubojích to často neřešíme; detailně se posuzuje v náročnějších střetech. :contentReference[oaicite:8]{index=8}</li>
+        <li>Každé kolo → vzdálenost = tvoje speed (ft).</li>
+        <li>Akce Dash → dvojnásobná vzdálenost.</li>
+        <li>Pohyb lze rozdělit na část – akci – část.</li>
+        <li>Obtížný terén může snížit speed na polovinu.</li>
       </ul>
-    </article>
-
-    <footer class="footer">
-      <small class="note">Podle přehledu inspirovaného veřejnou stránkou družiny (parafrázováno a upraveno pro kampaň Popel Trisiasu). Zdroj: viz původní přehled mechanik. :contentReference[oaicite:9]{index=9}</small>
-    </footer>
+    </section>
   </main>
 
   <script src="assets/js/sidebar.js" defer></script>
