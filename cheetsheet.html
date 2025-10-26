@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheatsheet – Popel Trisiasu</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
+      <a class="brand" href="index.html">Popel Trisiasu</a>
+    </div>
+
+    <nav class="menu" aria-label="Hlavní menu">
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="postavy" aria-expanded="false">
+          Postavy
+          <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-postavy" hidden>
+          <a class="menu__link" href="#">Bude doplněno</a>
+        </div>
+      </div>
+
+      <a class="menu__link" href="mapa.html">Mapa</a>
+      <a class="menu__link" href="velka-mapa.html">VELKÁ MAPA!</a>
+      <a class="menu__link menu__link--strong" href="cheatsheet.html">Cheatsheet</a>
+      <a class="menu__link" href="denik.html">Deník!</a>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="npc" aria-expanded="false">
+          NPC
+          <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-npc" hidden>
+          <a class="menu__link" href="#">Seznam NPC (placeholder)</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="mista" aria-expanded="false">
+          Místa
+          <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-mista" hidden>
+          <a class="menu__link" href="#">Seznam míst (placeholder)</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="frakce" aria-expanded="false">
+          Frakce
+          <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-frakce" hidden>
+          <a class="menu__link" href="#">Seznam frakcí (placeholder)</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="bohove" aria-expanded="false">
+          Bohové
+          <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-bohove" hidden>
+          <a class="menu__link" href="#">Seznam bohů (placeholder)</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="spellbook" aria-expanded="false">
+          Spellbook
+          <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-spellbook" hidden>
+          <a class="menu__link" href="#">Začátek spellbooku (placeholder)</a>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header class="content__header">
+      <h1>Cheatsheet</h1>
+      <p class="note">Rychlá nápověda k soubojům a základním mechanikám (D&D 5e, stručně).</p>
+    </header>
+
+    <article class="content__section panel" id="utok">
+      <h2 class="h">Hod na útok</h2>
+      <ul>
+        <li><strong>Zásah (to hit):</strong> d20 + <em>attack modifier</em> + případné bonusy.</li>
+        <li><strong>Attack modifier (zbraně nablízko):</strong> STR modifikátor + proficiency bonus (jen pokud máš zbraň ovládnutou) + bonus zbraně.</li>
+        <li><strong>Porovnání s AC:</strong> pokud je výsledek alespoň rovný cílovu <em>Armour Class</em>, zasáhl jsi.</li>
+        <li><strong>Poškození:</strong> kostka zbraně (d4–d12 dle zbraně) + DMG modifikátor + případné bonusy.</li>
+        <li><strong>DMG modifikátor:</strong> obvykle STR mod + bonus zbraně.</li>
+        <li><strong>Střelné zbraně:</strong> místo STR použij DEX mod. Máš-li u sebe přisedlého nepřítele, útočíš s nevýhodou.</li>
+        <li><strong>Finesse:</strong> můžeš místo STR použít DEX.</li>
+        <li><strong>Versatile:</strong> jedna či dvě ruce → odlišná kostka poškození.</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="ac">
+      <h2 class="h">Armour Class (AC)</h2>
+      <ul>
+        <li>AC vyjadřuje, jak těžké je postavu zasáhnout.</li>
+        <li>Vychází z brnění (a štítu) a z DEX, pokud to typ brnění dovoluje.</li>
+        <li>Některá brnění snižují DEX bonus; těžká brnění dávají nevýhodu na Stealth.</li>
+        <li>Těžká brnění mohou vyžadovat vysokou STR (jinak je neunesete efektivně).</li>
+        <li><strong>Vzorec:</strong> AC brnění + přípustný DEX mod (+2 za štít).</li>
+        <li>Bez brnění: <strong>10 + DEX</strong>.</li>
+        <li>Na light/medium/heavy je potřeba mastery (proficiency); bez ní nevýhody na hody zahrnující STR/DEX a typicky nemůžeš kouzlit. :contentReference[oaicite:1]{index=1}</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="spell-to-hit">
+      <h2 class="h">Kouzlení: zásah (spell attack)</h2>
+      <ul>
+        <li><strong>Hod:</strong> d20 + <em>spellcasting ability mod</em> + proficiency bonus.</li>
+        <li><strong>Schopnost podle classy:</strong> INT (wizard, eldritch knight, arcane trickster) · WIS (cleric, druid, ranger) · CHA (bard, paladin, sorcerer, warlock). :contentReference[oaicite:2]{index=2}</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="spell-save">
+      <h2 class="h">Kouzlení: odolání (saving throw)</h2>
+      <ul>
+        <li>Některá kouzla zasáhnou automaticky, cíl však hází <em>save</em>.</li>
+        <li><strong>Obtížnost (DC):</strong> 8 + <em>spellcasting ability mod</em> + proficiency bonus + další bonusy. :contentReference[oaicite:3]{index=3}</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="koncentrace">
+      <h2 class="h">Koncentrace</h2>
+      <ul>
+        <li>Sesilatel udrží vždy jen jedno <em>koncentrační</em> kouzlo současně.</li>
+        <li>Koncentrace se přeruší, když: sesíláš jiné koncentrační kouzlo; utrpíš zranění; jsi zabit/omráčen.</li>
+        <li>Při zranění házíš CON save: proti DC 10 nebo polovině utrpěného zranění (vyšší z obou). Při více zásazích házíš víckrát. :contentReference[oaicite:4]{index=4}</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="boj">
+      <h2 class="h">Jak probíhá souboj?</h2>
+      <p>Souboj je rozdělen na kola. Každé kolo hraješ jednou podle iniciativy (d20 + bonus k iniciativě, typicky DEX mod + proficiency, pokud to vaše pravidla používají). Začíná nejvyšší hod a pokračuje se k nejnižšímu. Některé efekty mohou iniciativu měnit. Délka kola je abstraktní. :contentReference[oaicite:5]{index=5}</p>
+      <ul>
+        <li>V každém kole máš: <strong>1 akci</strong>, <strong>1 bonusovou akci</strong> a <strong>pohyb</strong>. Třídy/featy/kouzla to mohou upravit.</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="akce">
+      <h2 class="h">Akce</h2>
+      <ul>
+        <li>Útok.</li>
+        <li>Seslání kouzla.</li>
+        <li>Speciální manévry/pohyby (dle pravidel/featů).</li>
+        <li>Interakce s prostředím (podle DM). :contentReference[oaicite:6]{index=6}</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="bonusova-akce">
+      <h2 class="h">Bonusová akce</h2>
+      <ul>
+        <li>Můžeš ji použít, jen když to výslovně umožňuje tvoje schopnost/kouzlo/feat.</li>
+        <li>V jednom kole obvykle jen jedna.</li>
+        <li>Např.: útok druhou zbraní; kouzlo se spotřebou „bonus action“; specifické manévry; jednoduché interakce (dle DM). :contentReference[oaicite:7]{index=7}</li>
+      </ul>
+    </article>
+
+    <article class="content__section panel" id="pohyb">
+      <h2 class="h">Pohyb</h2>
+      <ul>
+        <li>Každé kolo můžeš urazit vzdálenost rovnou tvé rychlosti (<em>speed</em>).</li>
+        <li>Akce <strong>Dash</strong> rychlost zdvojnásobí pro dané kolo; některé schopnosti přidávají další pohyby.</li>
+        <li>Pohyb můžeš rozdělit (pohyb → akce → zbytek pohybu).</li>
+        <li>Terén může pohyb zhoršit. V jednodušších soubojích to často neřešíme; detailně se posuzuje v náročnějších střetech. :contentReference[oaicite:8]{index=8}</li>
+      </ul>
+    </article>
+
+    <footer class="footer">
+      <small class="note">Podle přehledu inspirovaného veřejnou stránkou družiny (parafrázováno a upraveno pro kampaň Popel Trisiasu). Zdroj: viz původní přehled mechanik. :contentReference[oaicite:9]{index=9}</small>
+    </footer>
+  </main>
+
+  <script src="assets/js/sidebar.js" defer></script>
+</body>
+</html>
