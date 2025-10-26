@@ -1,21 +1,18 @@
-<aside class="sidebar" id="sidebar">
-  <div class="sidebar__header">
-    <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
-    <a class="brand" href="{{ site.baseurl }}/index.html">Popel Trisiasu</a>
-  </div>
-
+<aside class="sidebar" id="sidebar" aria-hidden="true">
   <nav class="menu" aria-label="Hlavní menu">
     <div class="menu__group">
-      <button class="menu__accordion" data-acc="postavy" aria-expanded="false">
-        Postavy <span class="chev">▸</span>
+      <button class="menu__accordion" data-acc="postavy" aria-expanded="true">
+        Postavy <span class="chev">▾</span>
       </button>
-      <div class="menu__panel" id="acc-postavy" hidden>
+      <div class="menu__panel" id="acc-postavy">
+        <a class="menu__link" href="#">Bude doplněno</a>
+        <a class="menu__link" href="#">Bude doplněno</a>
         <a class="menu__link" href="#">Bude doplněno</a>
       </div>
     </div>
 
-    <a class="menu__link" href="{{ site.baseurl }}/mapa.html">Mapa</a>
-    <a class="menu__link" href="{{ site.baseurl }}/velka-mapa.html">VELKÁ MAPA!</a>
+    <a class="menu__link menu__link--strong" href="{{ site.baseurl }}/mapa.html">Mapa</a>
+    <a class="menu__link menu__link--strong" href="{{ site.baseurl }}/velka-mapa.html">VELKÁ MAPA!</a>
     <a class="menu__link" href="{{ site.baseurl }}/cheatsheet.html">Cheatsheet</a>
     <a class="menu__link" href="{{ site.baseurl }}/denik.html">Deník!</a>
 
@@ -71,3 +68,5 @@
     </div>
   </nav>
 </aside>
+
+
