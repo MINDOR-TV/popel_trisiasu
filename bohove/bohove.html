@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bohové – Popel Trisiasu</title>
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
+      <a class="brand" href="index.html">Popel Trisiasu</a>
+    </div>
+
+    <nav class="menu" aria-label="Hlavní menu">
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="postavy" aria-expanded="false">
+          Postavy <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-postavy" hidden>
+          <a class="menu__link" href="#">Bude doplněno</a>
+        </div>
+      </div>
+
+      <a class="menu__link" href="mapa.html">Mapa</a>
+      <a class="menu__link" href="velka-mapa.html">VELKÁ MAPA!</a>
+      <a class="menu__link" href="cheatsheet.html">Cheatsheet</a>
+      <a class="menu__link" href="denik.html">Deník!</a>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="mista" aria-expanded="false">
+          Místa <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-mista" hidden>
+          <a class="menu__link" href="#">Seznam míst (placeholder)</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="frakce" aria-expanded="false">
+          Frakce <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-frakce" hidden>
+          <a class="menu__link" href="#">Seznam frakcí (placeholder)</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="bohove" aria-expanded="true">
+          Bohové <span class="chev">▾</span>
+        </button>
+        <div class="menu__panel" id="acc-bohove">
+          <a class="menu__link" href="marlůvar.html">Marlůvar</a>
+          <a class="menu__link" href="ilnur.html">Ilnur</a>
+          <a class="menu__link" href="glordie.html">Glordie</a>
+          <a class="menu__link" href="monaryn.html">Monaryn</a>
+          <a class="menu__link" href="malte.html">Malté</a>
+          <a class="menu__link" href="torilen.html">Torilen</a>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <button class="menu__accordion" data-acc="spellbook" aria-expanded="false">
+          Spellbook <span class="chev">▸</span>
+        </button>
+        <div class="menu__panel" id="acc-spellbook" hidden>
+          <a class="menu__link" href="#">Začátek spellbooku (placeholder)</a>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header class="content__header">
+      <h1>Bohové Oblagunu</h1>
+      <p class="note">Přehled známých božstev a jejich současného stavu. Zinder a Gunner jsou výtvory Monaryn; nejsou to bohové.</p>
+    </header>
+
+    <section class="content__section panel">
+      <h2 class="h">Panteon v krátkosti</h2>
+      <p>Marlůvar stvořil Oblagun během sázky se svými bratry Ilnurem a Glordiem. Měl tři děti: Monaryn, Malté a Torilena. Svět roztrhla rodinná tragédie; sestry v potyčce probodly bratra, Monaryn byla později zabita a Malté ukončila svůj život. Marlůvar po smrti dětí Oblagun opustil a odmlčel se. Ilnur a Glordie zůstali mimo přímé dění.</p>
+      <p>Trisias v roce 3700 žije v ozvěnách dávné božské éry. Víra přetrvává, ale přístup k božské moci je slabý, nevyzpytatelný a silně závislý na místě i rituálu.</p>
+    </section>
+
+    <section class="content__section grid cols-3">
+      <a class="card" href="marlůvar.html"><h3>Marlůvar</h3><p>Stvořitel a opuštěný otec světa. Nepřítomný, ale všude zanechal stopy.</p></a>
+      <a class="card" href="ilnur.html"><h3>Ilnur</h3><p>Jeden z bratrů-stvořitelů. Role skrytá, vliv nepřímý.</p></a>
+      <a class="card" href="glordie.html"><h3>Glordie</h3><p>Druhý z bratrů-stvořitelů. Sleduje rovnováhu z odstupu.</p></a>
+      <a class="card" href="monaryn.html"><h3>Monaryn</h3><p>Paranoidní bohyně krásy Trisiasu. Mrtvá; za sebou nechala Zindera a Gunnera.</p></a>
+      <a class="card" href="malte.html"><h3>Malté</h3><p>Strážkyně rozkvětu a obchodu Mazerinu. Mrtvá; její odkaz je v ruinách i bohatství.</p></a>
+      <a class="card" href="torilen.html"><h3>Torilen</h3><p>Pán orčího Trominu. Zabít omylem sestrami; jeho smrt zažehla válku.</p></a>
+    </section>
+  </main>
+
+  <script src="assets/js/sidebar.js" defer></script>
+</body>
+</html>
