@@ -1,1 +1,19 @@
+---
+---
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/base.css" />
+</head>
+<body>
+  {% include sidebar.html %}
+  <main class="content">
+    {{ content }}
+  </main>
+  <script src="{{ site.baseurl }}/assets/js/sidebar.js" defer></script>
+</body>
+</html>
 
