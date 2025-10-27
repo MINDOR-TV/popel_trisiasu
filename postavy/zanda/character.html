@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Žanda – (budoucí charakter)</title>
+  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu.github.io/style.css">
+</head>
+<body>
+  <header>
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <h1 class="header-title">Charakter hráče</h1>
+    <nav id="side-menu" class="menu hidden"></nav>
+  </header>
+
+  <main class="character-page">
+    <aside class="character-images">
+      <!-- Obrázky budou doplněny později -->
+      <img src="assets/placeholder.png" alt="Charakter 1">
+      <img src="assets/placeholder.png" alt="Charakter 2">
+    </aside>
+
+    <section class="character-details">
+      <h2 contenteditable="true" id="character-name">Jméno charakteru</h2>
+      <textarea id="character-description" placeholder="Popis charakteru..." rows="10"></textarea>
+      <a id="character-pdf" href="ch_sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+  <script src="character.js" defer></script>
+</body>
+</html>
