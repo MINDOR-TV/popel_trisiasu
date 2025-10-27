@@ -12,7 +12,13 @@ const menuData = {
     { name: "Mistr Kael", url: "npc/kael.html" }
   ],
   "Bohové": [
-    { name: "Celkový přehled bohů", url: "bohove/bohove.html" }
+    { name: "Celkový přehled bohů", url: "bohove/bohove.html" },
+    { name: "Marlůvar", url: "bohove/marluvar.html" },
+    { name: "Ilnur", url: "bohove/ilnur.html" },
+    { name: "Glordi", url: "bohove/glordi.html" },
+    { name: "Malté", url: "bohove/malte.html" },
+    { name: "Monaryn", url: "bohove/monaryn.html" },
+    { name: "Tórlien", url: "bohove/torlien.html" },
   ],
   "Cheatsheet": "cheatsheet.html" // ← samostatný odkaz, ne pole
 };
