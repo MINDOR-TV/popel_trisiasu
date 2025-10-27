@@ -1,84 +1,23 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bohové – Popel Trisiasu</title>
-  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar__header">
-      <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
-      <a class="brand" href="index.html">Popel Trisiasu</a>
-    </div>
+  <!-- Header s hamburger menu -->
+  <header>
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <h1 class="header-title">Bohové</h1>
+    <nav id="side-menu" class="menu hidden"></nav>
+  </header>
 
-    <nav class="menu" aria-label="Hlavní menu">
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="postavy" aria-expanded="false">
-          Postavy <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-postavy" hidden>
-          <a class="menu__link" href="#">Bude doplněno</a>
-        </div>
-      </div>
-
-      <a class="menu__link" href="mapa.html">Mapa</a>
-      <a class="menu__link" href="velka-mapa.html">VELKÁ MAPA!</a>
-      <a class="menu__link" href="cheatsheet.html">Cheatsheet</a>
-      <a class="menu__link" href="denik.html">Deník!</a>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="mista" aria-expanded="false">
-          Místa <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-mista" hidden>
-          <a class="menu__link" href="#">Seznam míst (placeholder)</a>
-        </div>
-      </div>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="frakce" aria-expanded="false">
-          Frakce <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-frakce" hidden>
-          <a class="menu__link" href="#">Seznam frakcí (placeholder)</a>
-        </div>
-      </div>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="bohove" aria-expanded="true">
-          Bohové <span class="chev">▾</span>
-        </button>
-        <div class="menu__panel" id="acc-bohove">
-          <a class="menu__link" href="marlůvar.html">Marlůvar</a>
-          <a class="menu__link" href="ilnur.html">Ilnur</a>
-          <a class="menu__link" href="glordie.html">Glordie</a>
-          <a class="menu__link" href="monaryn.html">Monaryn</a>
-          <a class="menu__link" href="malte.html">Malté</a>
-          <a class="menu__link" href="torilen.html">Torilen</a>
-        </div>
-      </div>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="spellbook" aria-expanded="false">
-          Spellbook <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-spellbook" hidden>
-          <a class="menu__link" href="#">Začátek spellbooku (placeholder)</a>
-        </div>
-      </div>
-    </nav>
-  </aside>
-
+  <!-- Hlavní obsah -->
   <main class="content">
-    <header class="content__header">
-      <h1>Bohové Oblagunu</h1>
-      <p class="note">Přehled známých božstev a jejich současného stavu. Zinder a Gunner jsou výtvory Monaryn; nejsou to bohové.</p>
-    </header>
-
     <section class="content__section panel">
-      <h2 class="h">Panteon v krátkosti</h2>
+      <h2>Panteon v krátkosti</h2>
       <p>Marlůvar stvořil Oblagun během sázky se svými bratry Ilnurem a Glordiem. Měl tři děti: Monaryn, Malté a Torilena. Svět roztrhla rodinná tragédie; sestry v potyčce probodly bratra, Monaryn byla později zabita a Malté ukončila svůj život. Marlůvar po smrti dětí Oblagun opustil a odmlčel se. Ilnur a Glordie zůstali mimo přímé dění.</p>
       <p>Trisias v roce 3700 žije v ozvěnách dávné božské éry. Víra přetrvává, ale přístup k božské moci je slabý, nevyzpytatelný a silně závislý na místě i rituálu.</p>
     </section>
@@ -93,6 +32,7 @@
     </section>
   </main>
 
-  <script src="assets/js/sidebar.js" defer></script>
+  <!-- Sidebar JS -->
+  <script src="script.js"></script>
 </body>
 </html>
