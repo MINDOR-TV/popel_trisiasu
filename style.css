@@ -125,7 +125,10 @@ header {
 
 .header-title {
   margin: 0;
-  color: #eee;
-  font-size: 1.2rem;
+  font-size: 1.5rem;       /* větší než standardní h1, můžeš upravit */
+  font-weight: bold;       /* aby byl výrazný */
+  color: #ffcc66;          /* stejné jako h2 */
   text-align: center;
+  line-height: 1;          /* aby se hezky srovnal vertikálně */
 }
+
