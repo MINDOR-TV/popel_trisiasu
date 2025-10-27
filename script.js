@@ -1,3 +1,28 @@
+// === FAVICON ===
+(function setFavicon(url) {
+  const head = document.head;
+
+  function upsert(rel, href, extra = {}) {
+    let link = head.querySelector(`link[rel="${rel}"]`);
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = rel;
+      head.appendChild(link);
+    }
+    Object.entries(extra).forEach(([k, v]) => (link[k] = v));
+    link.href = href;
+  }
+
+  // Standard favicon
+  upsert("icon", url, { type: "image/png" });
+  // Pro starší prohlížeče
+  upsert("shortcut icon", url, { type: "image/png" });
+  // iOS/Android PWA dlaždice (nebývá na škodu)
+  upsert("apple-touch-icon", url, {});
+
+})("https://mindor-tv.github.io/popel_trisiasu.github.io/assets/z_popel_logo.png");
+
+
 // --- Konfigurace menu ---
 const menuData = {
   "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu.github.io/index.html",
@@ -23,7 +48,7 @@ const menuData = {
     { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/glordi.html" },
     { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/malte.html" },
     { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/monaryn.html" },
-    { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/torlien.html" },
+    { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/torlien.html" }
   ],
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html"
 };
@@ -106,4 +131,5 @@ if (imagesToggle && characterSlider) {
     }
   });
 }
+
 
