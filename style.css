@@ -94,6 +94,18 @@ header {
   color: #ffcc66;
 }
 
+.menu.right {
+  right: 0;
+  left: auto;
+  width: 300px; /* širší než levý sidebar */
+}
+
+.menu-button.right {
+  position: absolute;
+  right: 1rem;
+}
+
+
 .submenu {
   margin-left: 1rem;
   display: flex;
