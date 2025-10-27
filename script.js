@@ -75,11 +75,11 @@ if (menuContainer && toggleBtn) {
 }
 
 // === Zvýraznění aktuální stránky ===
-const currentUrl = window.location.pathname.split("/").pop();
+const currentUrl = window.location.href;
 const links = menuContainer?.querySelectorAll("a") || [];
 
 links.forEach(link => {
-  const linkUrl = link.getAttribute("href").split("/").pop();
+  const linkUrl = link.href;
   if (linkUrl === currentUrl) {
     link.style.color = "#ffcc66";
     const panel = link.closest(".submenu");
