@@ -87,12 +87,12 @@ links.forEach(link => {
   }
 });
 
-// --- Slider obrázků charakteru (pokud existuje) ---
-const sliderToggle = document.getElementById('slider-toggle');
-const slider = document.querySelector('.character-images .slider');
+// --- Slider obrázků charakteru (pravý slider) ---
+const imagesToggle = document.getElementById('images-toggle');
+const imagesSlider = document.getElementById('images-slider');
 
-if (sliderToggle && slider) {
-  sliderToggle.addEventListener('click', () => {
-    slider.classList.toggle('hidden');
+if (imagesToggle && imagesSlider) {
+  imagesToggle.addEventListener('click', () => {
+    imagesSlider.classList.toggle('visible');
   });
 }
