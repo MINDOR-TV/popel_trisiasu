@@ -2,8 +2,12 @@
 const menuData = {
   "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu.github.io/index.html",
   "Postavy": [
-    { name: "Aldren", url: "postavy/aldren.html" },
-    { name: "Lyra", url: "postavy/lyra.html" }
+    { name: "Koblížkova postava", url: "postavy/koblizek.html" },
+    { name: "Eminky postava", url: "postavy/eminka.html" },
+    { name: "Fílova postava", url: "postavy/filip.html" },
+    { name: "Kájina postava", url: "postavy/kaja.html" },
+    { name: "Žandy postava", url: "postavy/zanda.html" },
+    { name: "Tobyho postava", url: "postavy/toby.html" }
   ],
   "Mapy": [
     { name: "Oblagun", url: "mapy/oblagun.html" },
