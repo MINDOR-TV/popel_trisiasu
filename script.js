@@ -20,7 +20,7 @@
   // iOS/Android PWA dlaždice (nebývá na škodu)
   upsert("apple-touch-icon", url, {});
 
-})("https://mindor-tv.github.io/popel_trisiasu.github.io/assets/z_popel_logo.png");
+})("https://mindor-tv.github.io/popel_trisiasu.github.io/assets/z_popela_logo.png");
 
 
 // --- Konfigurace menu ---
