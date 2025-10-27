@@ -1,5 +1,6 @@
 // --- Konfigurace menu ---
 const menuData = {
+  "Hlavní stránka": "index.html",
   "Postavy": [
     { name: "Aldren", url: "postavy/aldren.html" },
     { name: "Lyra", url: "postavy/lyra.html" }
