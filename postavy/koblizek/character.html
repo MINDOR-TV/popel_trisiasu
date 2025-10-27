@@ -8,11 +8,10 @@
 </head>
 <body>
   <header>
-    <button id="menu-toggle" class="menu-button">☰</button>
-    <h1 class="header-title">Charakter hráče</h1>
-    <nav id="side-menu" class="menu hidden"></nav>
-    <button id="images-toggle" class="menu-button right">🖼️</button>
-  </header>
+  <button class="menu-button" id="menu-toggle">☰</button>
+  <h1 class="header-title">Postava</h1>
+  <button class="images-button" id="images-toggle">🖼️</button>
+</header>
 
   <main class="character-page">
     <section class="character-details">
@@ -21,11 +20,10 @@
       <a id="character-pdf" href="assets/char-sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
     </section>
     <aside id="images-slider" class="menu right hidden">
-      <div class="slider">
-        <img src="assets/img1.jpg" alt="Charakter 1">
-        <img src="assets/img2.jpg" alt="Charakter 2">
-        <img src="assets/img3.jpg" alt="Charakter 3">
-        <!-- Další obrázky -->
+      <div class="character-slider" id="character-slider">
+        <img src="images/character1.png" alt="Character Image 1">
+        <img src="images/character2.png" alt="Character Image 2">
+        <img src="images/character3.png" alt="Character Image 3">
       </div>
     </aside>
   </main>
