@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toby – (budoucí charakter)</title>
+  <title>Charakter hráče – Popel Trisiasu</title>
   <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu.github.io/style.css">
 </head>
 <body>
   <header>
-    <button id="menu-toggle" class="menu-button">☰</button>
-    <h1 class="header-title">Charakter hráče</h1>
-    <nav id="side-menu" class="menu hidden"></nav>
+    <button class="menu-button" id="menu-toggle">☰</button>
+    <h1 class="header-title">Postava</h1>
+    <button class="images-button" id="images-toggle">🖼️</button>
   </header>
 
-  <main class="character-page">
-    <aside class="character-images">
-      <!-- Obrázky budou doplněny později -->
-      <img src="assets/placeholder.png" alt="Charakter 1">
-      <img src="assets/placeholder.png" alt="Charakter 2">
-    </aside>
+  <!-- Levé menu -->
+  <nav id="side-menu" class="menu"></nav>
 
+  <main class="character-page">
     <section class="character-details">
-      <h2 contenteditable="true" id="character-name">Jméno charakteru</h2>
-      <textarea id="character-description" placeholder="Popis charakteru..." rows="10"></textarea>
-      <a id="character-pdf" href="ch_sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
+      <h2>Jméno charakteru</h2>
+      <p>Popis charakteru, schopnosti, příběh a další informace. Tento text je statický a hráči ho nemohou měnit.</p>
+      <a id="character-pdf" href="assets/char-sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
     </section>
   </main>
 
-  <script src="script.js" defer></script>
-  <script src="character.js" defer></script>
+  <!-- Pravý slider s obrázky -->
+  <aside id="character-slider" class="character-slider">
+    <img src="images/character1.png" alt="Character Image 1">
+    <img src="images/character2.png" alt="Character Image 2">
+    <img src="images/character3.png" alt="Character Image 3">
+  </aside>
+
+  <script src="https://mindor-tv.github.io/popel_trisiasu.github.io/script.js" defer></script>
 </body>
 </html>
