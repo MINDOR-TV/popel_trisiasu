@@ -1,26 +1,27 @@
 // --- Konfigurace menu ---
 const menuData = {
-  "Hlavní stránka": "index.html",
+  "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu.github.io/index.html",
   "Postavy": [
     { name: "Aldren", url: "postavy/aldren.html" },
     { name: "Lyra", url: "postavy/lyra.html" }
   ],
   "Mapy": [
-    { name: "Město Trisias", url: "mapy/trisias.html" }
+    { name: "Oblagun", url: "mapy/oblagun.html" },
+    { name: "Kontinent Trisias", url: "mapy/trisias.html" }
   ],
   "NPC": [
     { name: "Mistr Kael", url: "npc/kael.html" }
   ],
   "Bohové": [
-    { name: "Celkový přehled bohů", url: "bohove/bohove.html" },
-    { name: "Marlůvar", url: "bohove/marluvar.html" },
-    { name: "Ilnur", url: "bohove/ilnur.html" },
-    { name: "Glordi", url: "bohove/glordi.html" },
-    { name: "Malté", url: "bohove/malte.html" },
-    { name: "Monaryn", url: "bohove/monaryn.html" },
-    { name: "Tórlien", url: "bohove/torlien.html" },
+    { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove.htmll" },
+    { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/marluvar.html" },
+    { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/ilnur.html" },
+    { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/glordi.html" },
+    { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/malte.html" },
+    { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/monaryn.html" },
+    { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/torlien.html" },
   ],
-  "Cheatsheet": "cheatsheet.html" // ← samostatný odkaz, ne pole
+  "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html" // ← samostatný odkaz, ne pole
 };
 
 // --- Vykreslení menu ---
