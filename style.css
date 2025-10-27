@@ -14,20 +14,28 @@ header {
   background-color: #2c2c2c;
   display: flex;
   align-items: center;
-  justify-content: center; /* vycentruje obsah horizontálně */
+  justify-content: center; /* nadpis uprostřed */
   padding: 0 1rem;
   z-index: 10;
-  gap: 1rem; /* mezera mezi tlačítkem a nadpisem */
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc66;
+  text-align: center;
+  line-height: 1;
 }
 
 .menu-button {
+  position: absolute;
+  left: 1rem;             /* hamburger vlevo */
   background: none;
   border: none;
   color: #eee;
   font-size: 1.5rem;
   cursor: pointer;
-  position: absolute;
-  left: 1rem; /* hamburger vlevo */
 }
 
 .menu {
@@ -60,11 +68,11 @@ header {
 
 .hero {
   display: flex;
-  justify-content: center;  /* horizontální centrování */
-  align-items: center;      /* vertikální centrování */
-  height: calc(100vh - 60px); /* odečteme výšku headeru */
-  margin-top: 60px;         /* vyrovnání pod header */
+  justify-content: center;       /* horizontální centrování */
+  align-items: center;           /* vertikální centrování */
+  height: calc(100vh - 60px);    /* odečteme výšku headeru */
 }
+
 
 
 .logo {
@@ -124,13 +132,3 @@ header {
   color: #aaa;
   font-style: italic;
 }
-
-.header-title {
-  margin: 0;
-  font-size: 1.5rem;       /* větší než standardní h1, můžeš upravit */
-  font-weight: bold;       /* aby byl výrazný */
-  color: #ffcc66;          /* stejné jako h2 */
-  text-align: center;
-  line-height: 1;          /* aby se hezky srovnal vertikálně */
-}
-
