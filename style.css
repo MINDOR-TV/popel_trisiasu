@@ -68,10 +68,12 @@ header {
 
 .hero {
   display: flex;
-  justify-content: center;        /* horizontálně uprostřed */
-  align-items: center;            /* vertikálně uprostřed */
-  height: calc(100vh - 60px);     /* odečteme výšku headeru */
-  margin-top: 60px;               /* vyrovnání pod header */
+  justify-content: center; /* horizontálně */
+  align-items: center;     /* vertikálně */
+  flex-direction: column;  /* aby byl nadpis nad logem, pokud tam logo je */
+  height: calc(100vh - 60px);
+  margin-top: 60px;        /* pod header */
+  text-align: center;      /* pro jistotu i u textu */
 }
 
 .logo {
