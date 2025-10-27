@@ -69,13 +69,12 @@ if (menuContainer && toggleBtn) {
     menuContainer.appendChild(section);
   });
 
-  // Ovládání vysouvacího menu vlevo
   toggleBtn.addEventListener("click", () => {
     menuContainer.classList.toggle("visible");
   });
 }
 
-// === ZVÝRAZNĚNÍ AKTUÁLNÍ STRÁNKY ===
+// === Zvýraznění aktuální stránky ===
 const currentUrl = window.location.pathname.split("/").pop();
 const links = menuContainer?.querySelectorAll("a") || [];
 
@@ -90,10 +89,11 @@ links.forEach(link => {
   }
 });
 
-// === PRAVÝ SLIDER PRO OBRÁZKY ===
+// === PRAVÝ SLIDER OBRÁZKŮ ===
 const imagesToggle = document.getElementById("images-toggle");
 const characterSlider = document.getElementById("character-slider");
 
-imagesToggle.addEventListener("click", () => {
-  characterSlider.classList.toggle("visible");
-});
+if (imagesToggle && characterSlider) {
+  imagesToggle.addEventListener("click", () => {
+    characterSl
+
