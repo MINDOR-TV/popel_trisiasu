@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charakter hráče – Popel Trisiasu</title>
-  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu.github.io/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -14,20 +14,35 @@
   </header>
 
   <main class="character-page">
-    <!-- Levé pole pro obrázky -->
-    <aside class="character-images">
-      <div class="image-placeholder">Zde budou obrázky charakteru</div>
-    </aside>
-
     <!-- Střední obsah -->
     <section class="character-details">
-      <h2 contenteditable="true" id="character-name">Jméno charakteru</h2>
-      <textarea id="character-description" placeholder="Popis charakteru..." rows="10"></textarea>
+      <h2>Jméno charakteru</h2>
+      <p>Popis charakteru, schopnosti, příběh a další informace. Tento text je statický a hráči ho nemohou měnit.</p>
       <a id="character-pdf" href="assets/char-sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
     </section>
+
+    <!-- Pravý vysouvací slider -->
+    <aside class="character-images">
+      <button id="slider-toggle">Obrázky ➤</button>
+      <div class="slider hidden">
+        <img src="assets/img1.jpg" alt="Charakter 1">
+        <img src="assets/img2.jpg" alt="Charakter 2">
+        <img src="assets/img3.jpg" alt="Charakter 3">
+        <!-- Další obrázky podle potřeby -->
+      </div>
+    </aside>
   </main>
 
   <script src="script.js" defer></script>
+  <script>
+    const sliderToggle = document.getElementById('slider-toggle');
+    const slider = document.querySelector('.character-images .slider');
+
+    sliderToggle.addEventListener('click', () => {
+      slider.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
+
 
