@@ -220,3 +220,12 @@ header {
 .slider.hidden {
   display: none;
 }
+
+.character-images.menu.right {
+  width: 300px; /* nebo 350px, podle potřeby */
+}
+
+.character-images .slider img {
+  width: 100%;
+  border-radius: 10px;
+}
