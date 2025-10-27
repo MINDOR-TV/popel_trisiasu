@@ -4,38 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charakter hráče – Popel Trisiasu</title>
-  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu.github.io/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-  <button id="menu-toggle" class="menu-button">☰</button>
-  <h1 class="header-title">Charakter hráče</h1>
-  <nav id="side-menu" class="menu hidden"></nav>
-  <button id="images-toggle" class="menu-button right">🖼️</button>
-</header>
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <h1 class="header-title">Charakter hráče</h1>
+    <nav id="side-menu" class="menu hidden"></nav>
+    <button id="images-toggle" class="menu-button right">🖼️</button>
+  </header>
 
+  <main class="character-page">
+    <section class="character-details">
+      <h2>Jméno charakteru</h2>
+      <p>Popis charakteru, schopnosti, příběh a další informace. Tento text je statický a hráči ho nemohou měnit.</p>
+      <a id="character-pdf" href="assets/char-sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
+    </section>
+    <aside id="images-slider" class="menu right hidden">
+      <div class="slider">
+        <img src="assets/img1.jpg" alt="Charakter 1">
+        <img src="assets/img2.jpg" alt="Charakter 2">
+        <img src="assets/img3.jpg" alt="Charakter 3">
+        <!-- Další obrázky -->
+      </div>
+    </aside>
+  </main>
 
- <main class="character-page">
-  <!-- Střední obsah -->
-  <section class="character-details">
-    <h2>Jméno charakteru</h2>
-    <p>Popis charakteru, schopnosti, příběh a další informace. Tento text je statický a hráči ho nemohou měnit.</p>
-    <a id="character-pdf" href="assets/char-sheet.pdf" target="_blank">Stáhnout Character Sheet (PDF)</a>
-  </section>
-
-  <!-- Pravý vysouvací slider -->
-  <aside class="character-images menu right hidden" id="images-slider">
-    <div class="slider">
-      <img src="assets/img1.jpg">
-      <img src="assets/img2.jpg">
-      <img src="assets/img3.jpg">
-      <!-- Další obrázky podle potřeby -->
-    </div>
-  </aside>
-</main>
-
-  <script src="https://mindor-tv.github.io/popel_trisiasu.github.io/script.js" defer></script>
-  </body>
+  <script src="script.js" defer></script>
+</body>
 </html>
-
-
