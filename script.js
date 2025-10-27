@@ -50,7 +50,7 @@ if (menuContainer && toggleBtn) {
       section.appendChild(header);
 
       const submenu = document.createElement("div");
-      submenu.classList.add("submenu", "hidden");
+      submenu.classList.add("submenu");
 
       menuData[category].forEach(item => {
         const link = document.createElement("a");
@@ -61,8 +61,9 @@ if (menuContainer && toggleBtn) {
 
       section.appendChild(submenu);
 
+      // klik pro animované rozvinutí
       header.addEventListener("click", () => {
-        submenu.classList.toggle("hidden");
+        submenu.classList.toggle("visible");
       });
     }
 
@@ -83,7 +84,7 @@ links.forEach(link => {
   if (linkUrl === currentUrl) {
     link.style.color = "#ffcc66";
     const panel = link.closest(".submenu");
-    if (panel) panel.classList.remove("hidden");
+    if (panel) panel.classList.add("visible");
     const parentCategory = link.closest(".menu-section").querySelector(".menu-category");
     if (parentCategory) parentCategory.style.color = "#ffcc66";
   }
@@ -94,16 +95,15 @@ const imagesToggle = document.getElementById("images-toggle");
 const characterSlider = document.getElementById("character-slider");
 
 if (imagesToggle && characterSlider) {
-  // přepínání viditelnosti slideru
   imagesToggle.addEventListener("click", (e) => {
-    e.stopPropagation(); // zabrání zavření klikem na dokument
+    e.stopPropagation();
     characterSlider.classList.toggle("visible");
   });
 
-  // zavření kliknutím mimo panel
   document.addEventListener("click", (e) => {
     if (!characterSlider.contains(e.target) && !imagesToggle.contains(e.target)) {
       characterSlider.classList.remove("visible");
     }
   });
 }
+
