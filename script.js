@@ -2,12 +2,12 @@
 const menuData = {
   "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu.github.io/index.html",
   "Postavy": [
-    { name: "Koblížkova postava", url: "postavy/koblizek.html" },
-    { name: "Eminky postava", url: "postavy/eminka.html" },
-    { name: "Fílova postava", url: "postavy/filip.html" },
-    { name: "Kájina postava", url: "postavy/kaja.html" },
-    { name: "Žandy postava", url: "postavy/zanda.html" },
-    { name: "Tobyho postava", url: "postavy/toby.html" }
+    { name: "Koblížkova postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/koblizek/character.html" },
+    { name: "Eminky postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/eminka/character.html" },
+    { name: "Fílova postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/filip/character.html" },
+    { name: "Kájina postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/kaja/character.html" },
+    { name: "Žandy postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/zanda/character.html" },
+    { name: "Tobyho postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/toby/character.html" }
   ],
   "Mapy": [
     { name: "Oblagun", url: "mapy/oblagun.html" },
