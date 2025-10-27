@@ -67,13 +67,25 @@ toggleBtn.addEventListener("click", () => {
 });
 
 // --- Zvýraznění aktuální stránky ---
-const currentUrl = window.location.pathname.split("/").pop(); // získá např. 'aldren.html'
+const currentUrl = window.location.pathname.split("/").pop(); // např. 'bohove.html'
 
 const links = menuContainer.querySelectorAll("a");
 links.forEach(link => {
   const linkUrl = link.getAttribute("href").split("/").pop();
   if (linkUrl === currentUrl) {
-    link.style.color = "#ffcc66"; // aby text byl čitelný
+    // Zvýrazní aktuální odkaz
+    link.style.color = "#ffcc66";
+
+    // Pokud je odkaz v podmenu, rozbalíme podmenu
+    const panel = link.closest(".submenu");
+    if (panel) {
+      panel.classList.remove("hidden");
+    }
+
+    // Zvýrazní nadřazenou kategorii
+    const parentCategory = link.closest(".menu-section").querySelector(".menu-category");
+    if (parentCategory) {
+      parentCategory.style.color = "#ffcc66";
+    }
   }
 });
-
