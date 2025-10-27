@@ -66,4 +66,15 @@ toggleBtn.addEventListener("click", () => {
   menuContainer.classList.toggle("visible");
 });
 
+// --- Zvýraznění aktuální stránky ---
+const currentUrl = window.location.pathname.split("/").pop(); // získá např. 'aldren.html'
+
+const links = menuContainer.querySelectorAll("a");
+links.forEach(link => {
+  const linkUrl = link.getAttribute("href").split("/").pop();
+  if (linkUrl === currentUrl) {
+    link.style.backgroundColor = "yellow"; // nebo jakákoliv barva
+    link.style.color = "black"; // aby text byl čitelný
+  }
+});
 
