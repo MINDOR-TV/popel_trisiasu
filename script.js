@@ -92,10 +92,8 @@ links.forEach(link => {
 
 // === PRAVÝ SLIDER PRO OBRÁZKY ===
 const imagesToggle = document.getElementById("images-toggle");
-const imagePanel = document.getElementById("image-panel");
+const characterSlider = document.getElementById("character-slider");
 
-if (imagesToggle && imagePanel) {
-  imagesToggle.addEventListener("click", () => {
-    imagePanel.classList.toggle("visible");
-  });
-}
+imagesToggle.addEventListener("click", () => {
+  characterSlider.classList.toggle("visible");
+});
