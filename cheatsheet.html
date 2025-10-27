@@ -1,90 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cheatsheet – Popel Trisiasu</title>
-  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar__header">
-      <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
-      <a class="brand" href="index.html">Popel Trisiasu</a>
-    </div>
-
-    <nav class="menu" aria-label="Hlavní menu">
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="postavy" aria-expanded="false">
-          Postavy
-          <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-postavy" hidden>
-          <a class="menu__link" href="#">Bude doplněno</a>
-        </div>
-      </div>
-
-      <a class="menu__link" href="mapa.html">Mapa</a>
-      <a class="menu__link" href="velka-mapa.html">VELKÁ MAPA!</a>
-      <a class="menu__link menu__link--strong" href="cheatsheet.html">Cheatsheet</a>
-      <a class="menu__link" href="denik.html">Deník!</a>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="npc" aria-expanded="false">
-          NPC
-          <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-npc" hidden>
-          <a class="menu__link" href="#">Seznam NPC (placeholder)</a>
-        </div>
-      </div>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="mista" aria-expanded="false">
-          Místa
-          <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-mista" hidden>
-          <a class="menu__link" href="#">Seznam míst (placeholder)</a>
-        </div>
-      </div>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="frakce" aria-expanded="false">
-          Frakce
-          <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-frakce" hidden>
-          <a class="menu__link" href="#">Seznam frakcí (placeholder)</a>
-        </div>
-      </div>
-
-      <div class="menu__group">
-  <button class="menu__accordion" data-acc="bohove" aria-expanded="false">
-    Bohové <span class="chev">▸</span>
-  </button>
-  <div class="menu__panel" id="acc-bohove" hidden>
-    <a class="menu__link" href="bohove/">Přehled bohů</a>
-    <a class="menu__link" href="bohove/marluvar.html">Marlůvar</a>
-    <a class="menu__link" href="bohove/ilnur.html">Ilnur</a>
-    <a class="menu__link" href="bohove/glordie.html">Glordie</a>
-    <a class="menu__link" href="bohove/monaryn.html">Monaryn</a>
-    <a class="menu__link" href="bohove/malte.html">Malté</a>
-    <a class="menu__link" href="bohove/torilen.html">Torilen</a>
-  </div>
-</div>
-
-      <div class="menu__group">
-        <button class="menu__accordion" data-acc="spellbook" aria-expanded="false">
-          Spellbook
-          <span class="chev">▸</span>
-        </button>
-        <div class="menu__panel" id="acc-spellbook" hidden>
-          <a class="menu__link" href="#">Začátek spellbooku (placeholder)</a>
-        </div>
-      </div>
-    </nav>
-  </aside>
+  <header>
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <nav id="side-menu" class="menu hidden"></nav>
+  </header>
 
   <main class="content">
     <header class="content__header">
@@ -93,7 +19,7 @@
     </header>
 
     <section class="content__section panel">
-      <h2 class="h">Útok (Attack)</h2>
+      <h2>Útok (Attack)</h2>
       <ul>
         <li><strong>To Hit = d20 + attack modifier + bonusy.</strong></li>
         <li><strong>Attack modifier (zbraň nablízko):</strong> STR mod + proficiency bonus (pokud umíš se zbraní) + bonus zbraně.</li>
@@ -107,7 +33,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">AC (Armour Class)</h2>
+      <h2>AC (Armour Class)</h2>
       <ul>
         <li>Určuje, jak těžké je tě zasáhnout.</li>
         <li>Vychází z brnění a DEX modifikátoru (podle typu brnění).</li>
@@ -120,7 +46,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Kouzlení – zásah</h2>
+      <h2>Kouzlení – zásah</h2>
       <ul>
         <li>Hod = d20 + spellcasting ability mod + proficiency bonus.</li>
         <li><strong>Ability podle classy:</strong> INT (wizard, eldritch knight, arcane trickster), WIS (cleric, druid, ranger), CHA (bard, paladin, sorcerer, warlock).</li>
@@ -128,7 +54,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Kouzlení – odolání (Save)</h2>
+      <h2>Kouzlení – odolání (Save)</h2>
       <ul>
         <li>Některá kouzla zasáhnou automaticky → cíl háže save.</li>
         <li>DC = 8 + spellcasting ability mod + proficiency bonus (+ bonusy).</li>
@@ -136,7 +62,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Koncentrace</h2>
+      <h2>Koncentrace</h2>
       <ul>
         <li>Lze udržovat jen jedno koncentrační kouzlo najednou.</li>
         <li>Koncentrace končí → seslání jiného koncentračního kouzla / zranění / smrt / omráčení.</li>
@@ -145,7 +71,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Souboj</h2>
+      <h2>Souboj</h2>
       <ul>
         <li>Probíhá v kolech → každý hraje 1× za kolo podle iniciativy (d20 + DEX mod + případný bonus).</li>
         <li>Každé kolo má: 1 akci, 1 bonusovou akci a pohyb.</li>
@@ -153,7 +79,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Akce</h2>
+      <h2>Akce</h2>
       <ul>
         <li>Útok (zbraň nebo kouzlo).</li>
         <li>Seslání kouzla.</li>
@@ -163,7 +89,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Bonusová akce</h2>
+      <h2>Bonusová akce</h2>
       <ul>
         <li>Pouze pokud to umožňuje schopnost / kouzlo / feat.</li>
         <li>Jen jedna na kolo.</li>
@@ -172,7 +98,7 @@
     </section>
 
     <section class="content__section panel">
-      <h2 class="h">Pohyb</h2>
+      <h2>Pohyb</h2>
       <ul>
         <li>Každé kolo → vzdálenost = tvoje speed (ft).</li>
         <li>Akce Dash → dvojnásobná vzdálenost.</li>
@@ -182,6 +108,7 @@
     </section>
   </main>
 
-  <script src="assets/js/sidebar.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
