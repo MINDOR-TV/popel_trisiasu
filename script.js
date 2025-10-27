@@ -25,7 +25,7 @@ const menuData = {
     { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/monaryn.html" },
     { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove/torlien.html" },
   ],
-  "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html" // ← samostatný odkaz, ne pole
+  "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html"
 };
 
 // --- Vykreslení menu ---
@@ -35,16 +35,13 @@ Object.keys(menuData).forEach(category => {
   const section = document.createElement("div");
   section.classList.add("menu-section");
 
-  // Pokud je hodnota string → přímý odkaz (Cheatsheet)
   if (typeof menuData[category] === "string") {
     const link = document.createElement("a");
     link.textContent = category;
     link.href = menuData[category];
     link.classList.add("menu-category");
     section.appendChild(link);
-  } 
-  // Jinak jde o sekci s podmenu
-  else {
+  } else {
     const header = document.createElement("div");
     header.textContent = category;
     header.classList.add("menu-category");
@@ -62,7 +59,6 @@ Object.keys(menuData).forEach(category => {
 
     section.appendChild(submenu);
 
-    // Kliknutím rozbalit/sbalit podmenu
     header.addEventListener("click", () => {
       submenu.classList.toggle("hidden");
     });
@@ -78,25 +74,25 @@ toggleBtn.addEventListener("click", () => {
 });
 
 // --- Zvýraznění aktuální stránky ---
-const currentUrl = window.location.pathname.split("/").pop(); // např. 'bohove.html'
-
+const currentUrl = window.location.pathname.split("/").pop();
 const links = menuContainer.querySelectorAll("a");
 links.forEach(link => {
   const linkUrl = link.getAttribute("href").split("/").pop();
   if (linkUrl === currentUrl) {
-    // Zvýrazní aktuální odkaz
     link.style.color = "#ffcc66";
-
-    // Pokud je odkaz v podmenu, rozbalíme podmenu
     const panel = link.closest(".submenu");
-    if (panel) {
-      panel.classList.remove("hidden");
-    }
-
-    // Zvýrazní nadřazenou kategorii
+    if (panel) panel.classList.remove("hidden");
     const parentCategory = link.closest(".menu-section").querySelector(".menu-category");
-    if (parentCategory) {
-      parentCategory.style.color = "#ffcc66";
-    }
+    if (parentCategory) parentCategory.style.color = "#ffcc66";
   }
 });
+
+// --- Slider obrázků charakteru (pokud existuje) ---
+const sliderToggle = document.getElementById('slider-toggle');
+const slider = document.querySelector('.character-images .slider');
+
+if (sliderToggle && slider) {
+  sliderToggle.addEventListener('click', () => {
+    slider.classList.toggle('hidden');
+  });
+}
