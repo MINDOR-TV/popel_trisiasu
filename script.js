@@ -13,7 +13,7 @@ const menuData = {
   "Bohové": [
     { name: "Amunar", url: "bohove/amunar.html" }
   ],
-  "Cheatsheet": "cheatsheet.html"
+  "Cheatsheet": "cheatsheet.html" // ← samostatný odkaz, ne pole
 };
 
 // --- Vykreslení menu ---
@@ -23,30 +23,40 @@ Object.keys(menuData).forEach(category => {
   const section = document.createElement("div");
   section.classList.add("menu-section");
 
-  // Nadpis sekce (klikací)
-  const header = document.createElement("div");
-  header.textContent = category;
-  header.classList.add("menu-category");
-  section.appendChild(header);
-
-  // Vnitřní seznam (skrytý)
-  const submenu = document.createElement("div");
-  submenu.classList.add("submenu", "hidden");
-
-  menuData[category].forEach(item => {
+  // Pokud je hodnota string → přímý odkaz (Cheatsheet)
+  if (typeof menuData[category] === "string") {
     const link = document.createElement("a");
-    link.textContent = item.name;
-    link.href = item.url;
-    submenu.appendChild(link);
-  });
+    link.textContent = category;
+    link.href = menuData[category];
+    link.classList.add("menu-category");
+    section.appendChild(link);
+  } 
+  // Jinak jde o sekci s podmenu
+  else {
+    const header = document.createElement("div");
+    header.textContent = category;
+    header.classList.add("menu-category");
+    section.appendChild(header);
 
-  section.appendChild(submenu);
+    const submenu = document.createElement("div");
+    submenu.classList.add("submenu", "hidden");
+
+    menuData[category].forEach(item => {
+      const link = document.createElement("a");
+      link.textContent = item.name;
+      link.href = item.url;
+      submenu.appendChild(link);
+    });
+
+    section.appendChild(submenu);
+
+    // Kliknutím rozbalit/sbalit podmenu
+    header.addEventListener("click", () => {
+      submenu.classList.toggle("hidden");
+    });
+  }
+
   menuContainer.appendChild(section);
-
-  // Kliknutí na nadpis rozbaluje/sklápí submenu
-  header.addEventListener("click", () => {
-    submenu.classList.toggle("hidden");
-  });
 });
 
 // --- Ovládání hlavního vysouvacího menu ---
@@ -54,4 +64,5 @@ const toggleBtn = document.getElementById("menu-toggle");
 toggleBtn.addEventListener("click", () => {
   menuContainer.classList.toggle("visible");
 });
+
 
