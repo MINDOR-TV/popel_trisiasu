@@ -70,6 +70,7 @@ const menuData = {
     { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/monaryn.html" },
     { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/torlien.html" }
   ],
+  "Dějiny Oblagunu": "https://mindor-tv.github.io/popel_trisiasu.github.io/dejiny-oblagunu.html",
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html"
 };
 
