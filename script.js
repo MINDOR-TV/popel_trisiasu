@@ -13,9 +13,7 @@ const menuData = {
   "Bohové": [
     { name: "Amunar", url: "bohove/amunar.html" }
   ],
-  "Cheatsheet": [
-    { name: "Základní přehled", url: "cheatsheet.html" }
-  ]
+  "Cheatsheet": "cheatsheet.html"
 };
 
 // --- Vykreslení menu ---
