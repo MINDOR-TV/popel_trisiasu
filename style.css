@@ -20,12 +20,10 @@ header {
 }
 
 .header-title {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffcc66;
-  text-align: center;
-  line-height: 1;
+  text-align: center;   /* horizontální centrování textu */
+  font-size: 3rem;      /* nebo jaká velikost ti vyhovuje */
+  color: #ffcc66;       /* stejná barva jako h2 */
+  margin: 0;       
 }
 
 .menu-button {
