@@ -28,54 +28,57 @@ const menuData = {
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html"
 };
 
-// --- Vykreslení menu ---
+// === LEVÉ MENU ===
 const menuContainer = document.getElementById("side-menu");
-
-Object.keys(menuData).forEach(category => {
-  const section = document.createElement("div");
-  section.classList.add("menu-section");
-
-  if (typeof menuData[category] === "string") {
-    const link = document.createElement("a");
-    link.textContent = category;
-    link.href = menuData[category];
-    link.classList.add("menu-category");
-    section.appendChild(link);
-  } else {
-    const header = document.createElement("div");
-    header.textContent = category;
-    header.classList.add("menu-category");
-    section.appendChild(header);
-
-    const submenu = document.createElement("div");
-    submenu.classList.add("submenu", "hidden");
-
-    menuData[category].forEach(item => {
-      const link = document.createElement("a");
-      link.textContent = item.name;
-      link.href = item.url;
-      submenu.appendChild(link);
-    });
-
-    section.appendChild(submenu);
-
-    header.addEventListener("click", () => {
-      submenu.classList.toggle("hidden");
-    });
-  }
-
-  menuContainer.appendChild(section);
-});
-
-// --- Ovládání hlavního vysouvacího menu ---
 const toggleBtn = document.getElementById("menu-toggle");
-toggleBtn.addEventListener("click", () => {
-  menuContainer.classList.toggle("visible");
-});
 
-// --- Zvýraznění aktuální stránky ---
+if (menuContainer && toggleBtn) {
+  Object.keys(menuData).forEach(category => {
+    const section = document.createElement("div");
+    section.classList.add("menu-section");
+
+    if (typeof menuData[category] === "string") {
+      const link = document.createElement("a");
+      link.textContent = category;
+      link.href = menuData[category];
+      link.classList.add("menu-category");
+      section.appendChild(link);
+    } else {
+      const header = document.createElement("div");
+      header.textContent = category;
+      header.classList.add("menu-category");
+      section.appendChild(header);
+
+      const submenu = document.createElement("div");
+      submenu.classList.add("submenu", "hidden");
+
+      menuData[category].forEach(item => {
+        const link = document.createElement("a");
+        link.textContent = item.name;
+        link.href = item.url;
+        submenu.appendChild(link);
+      });
+
+      section.appendChild(submenu);
+
+      header.addEventListener("click", () => {
+        submenu.classList.toggle("hidden");
+      });
+    }
+
+    menuContainer.appendChild(section);
+  });
+
+  // Ovládání vysouvacího menu vlevo
+  toggleBtn.addEventListener("click", () => {
+    menuContainer.classList.toggle("visible");
+  });
+}
+
+// === ZVÝRAZNĚNÍ AKTUÁLNÍ STRÁNKY ===
 const currentUrl = window.location.pathname.split("/").pop();
-const links = menuContainer.querySelectorAll("a");
+const links = menuContainer?.querySelectorAll("a") || [];
+
 links.forEach(link => {
   const linkUrl = link.getAttribute("href").split("/").pop();
   if (linkUrl === currentUrl) {
@@ -87,12 +90,12 @@ links.forEach(link => {
   }
 });
 
-// --- Slider obrázků charakteru (pravý slider) ---
-const imagesToggle = document.getElementById('images-toggle');
-const imagesSlider = document.getElementById('images-slider');
+// === PRAVÝ SLIDER PRO OBRÁZKY ===
+const imagesToggle = document.getElementById("images-toggle");
+const imagePanel = document.getElementById("image-panel");
 
-if (imagesToggle && imagesSlider) {
-  imagesToggle.addEventListener('click', () => {
-    imagesSlider.classList.toggle('hidden');
+if (imagesToggle && imagePanel) {
+  imagesToggle.addEventListener("click", () => {
+    imagePanel.classList.toggle("visible");
   });
 }
