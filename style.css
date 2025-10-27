@@ -60,10 +60,12 @@ header {
 
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center;  /* horizontální centrování */
+  align-items: center;      /* vertikální centrování */
+  height: calc(100vh - 60px); /* odečteme výšku headeru */
+  margin-top: 60px;         /* vyrovnání pod header */
 }
+
 
 .logo {
   width: 300px;
