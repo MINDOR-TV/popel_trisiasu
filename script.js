@@ -93,6 +93,6 @@ const imagesSlider = document.getElementById('images-slider');
 
 if (imagesToggle && imagesSlider) {
   imagesToggle.addEventListener('click', () => {
-    imagesSlider.classList.toggle('visible');
+    imagesSlider.classList.toggle('hidden');
   });
 }
