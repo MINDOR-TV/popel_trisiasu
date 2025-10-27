@@ -1,3 +1,23 @@
+// === Globální favicon pro všechny podstránky ===
+(function setGlobalFavicon() {
+  const url = "https://mindor-tv.github.io/popel_trisiasu.github.io/assets/z_popela_logo.png";
+
+  // smažeme staré favicony (pokud nějaké jsou)
+  document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]').forEach(el => el.remove());
+
+  // vytvoříme nové
+  const createIcon = (rel) => {
+    const link = document.createElement("link");
+    link.rel = rel;
+    link.type = "image/png";
+    link.href = url;
+    document.head.appendChild(link);
+  };
+
+  createIcon("icon");
+  createIcon("shortcut icon");
+  createIcon("apple-touch-icon");
+})();
 // === FAVICON ===
 (function setFavicon(url) {
   const head = document.head;
