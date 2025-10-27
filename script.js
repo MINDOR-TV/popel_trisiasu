@@ -73,7 +73,7 @@ const links = menuContainer.querySelectorAll("a");
 links.forEach(link => {
   const linkUrl = link.getAttribute("href").split("/").pop();
   if (linkUrl === currentUrl) {
-    link.style.color = "yellow"; // aby text byl čitelný
+    link.style.color = "#ffcc66"; // aby text byl čitelný
   }
 });
 
