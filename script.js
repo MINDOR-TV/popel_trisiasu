@@ -94,6 +94,16 @@ const imagesToggle = document.getElementById("images-toggle");
 const characterSlider = document.getElementById("character-slider");
 
 if (imagesToggle && characterSlider) {
-  imagesToggle.addEventListener("click", () => {
-    characterSl
+  // přepínání viditelnosti slideru
+  imagesToggle.addEventListener("click", (e) => {
+    e.stopPropagation(); // zabrání zavření klikem na dokument
+    characterSlider.classList.toggle("visible");
+  });
 
+  // zavření kliknutím mimo panel
+  document.addEventListener("click", (e) => {
+    if (!characterSlider.contains(e.target) && !imagesToggle.contains(e.target)) {
+      characterSlider.classList.remove("visible");
+    }
+  });
+}
