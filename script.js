@@ -153,4 +153,11 @@ if (imagesToggle && characterSlider) {
   });
 }
 
+// Automaticky otevřít panel při načtení stránky
+window.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("character-slider");
+  slider?.classList.add("visible");
+});
+
+
 
