@@ -119,21 +119,20 @@ header {
 
 /* ===== HERO OBSAH ===== */
 .hero {
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* nastavíme min‑výšku, ale nepřekročíme celou obrazovku bez mezer */
-  min-height: calc(100vh - 120px); /* 60px pro hlavičku + 60px spodní mezera */
-  margin-top: 60px; /* mezera od hlavičky */
+  height: calc(100vh - 120px);   /* odečteno 2×60px mezer pro hlavičku a spodní prostor */
+  margin-top: 60px;              /* mezera od hlavičky */
   text-align: center;
   padding: 0 1rem;
 }
 
 .logo {
-  max-width: 60%; /* menší než dříve, aby se vešlo */
+  max-width: 40%;                 /* značně menší než dříve */
   height: auto;
-  margin: 2rem auto; /* mezera nad a pod logem */
+  margin: 2rem auto;   
 }
 
 /* ===== HLAVNÍ OBSAH ===== */
@@ -256,8 +255,18 @@ header {
   }
 }
 
-/* === MOBIL / TABLET === */
+/* Mobilní verze */
 @media (max-width: 899px) {
+  .hero {
+    height: auto;                /* nech výšku volnou pro mobil */
+    padding: 2rem 1rem;
+    margin-top: 60px;
+  }
+  .logo {
+    max-width: 60%;              /* mobilní velikost loga */
+    margin: 1.5rem auto;
+  }
+  
   #character-slider {
     transform: translateX(100%); /* panel schovaný */
   }
@@ -268,35 +277,5 @@ header {
 
   #images-toggle {
     display: block;
-  }
-}
-
-/* Logo / hero */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: calc(100vh - 60px); /* výška obrazovky minus hlavička */
-  margin-top: 60px;
-  text-align: center;
-  padding: 0 1rem; /* mobilní odsazení */
-}
-
-.logo {
-  max-width: 70%; /* desktop */
-  height: auto;
-  margin: 0 auto 2rem;
-}
-
-/* Mobilní verze */
-@media (max-width: 899px) {
-  .hero {
-    min-height: auto;
-    padding: 2rem 1rem;
-  }
-  .logo {
-    max-width: 50%;
-    margin: 1.5rem auto;
   }
 }
