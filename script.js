@@ -46,7 +46,7 @@
 // --- Konfigurace menu ---
 const menuData = {
   "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu/index.html",
-  "Postavy": [
+  "Družina": [
     { name: "Stogorin", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/stogorin/character.html" },
     { name: "Káji Š. postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/kaja/character.html" },
     { name: "Bogdan", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/bogdan/character.html" },
