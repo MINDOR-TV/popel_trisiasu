@@ -71,8 +71,9 @@ header {
   transition: transform 0.3s ease;
   padding: 1rem;
   box-sizing: border-box;
-  z-index: 9999;
+  z-index: 10000;
 }
+
 
 .menu.visible {
   transform: translateX(0);
@@ -266,5 +267,36 @@ header {
 
   #images-toggle {
     display: block;
+  }
+}
+
+/* Logo / hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 60px); /* výška obrazovky minus hlavička */
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 1rem; /* mobilní odsazení */
+}
+
+.logo {
+  max-width: 70%; /* desktop */
+  height: auto;
+  margin: 0 auto 2rem;
+}
+
+/* Mobilní verze */
+@media (max-width: 899px) {
+  .hero {
+    height: auto; /* nech výšku volnou */
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    max-width: 50%; /* menší logo */
+    margin-bottom: 1.5rem;
   }
 }
