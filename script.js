@@ -137,7 +137,7 @@ links.forEach(link => {
 });
 
 // === PRAVÝ SLIDER OBRÁZKŮ ===
-/*const imagesToggle = document.getElementById("images-toggle");
+const imagesToggle = document.getElementById("images-toggle");
 const characterSlider = document.getElementById("character-slider");
 
 if (imagesToggle && characterSlider) {
@@ -151,13 +151,9 @@ if (imagesToggle && characterSlider) {
       characterSlider.classList.remove("visible");
     }
   });
-}*/
+}
 
-// Automaticky otevřít panel při načtení stránky
-window.addEventListener("DOMContentLoaded", () => {
-  const slider = document.getElementById("character-slider");
-  slider?.classList.add("visible");
-});
+
 
 
 
