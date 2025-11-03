@@ -241,3 +241,29 @@ header {
 .images-button:hover {
   color: #ffcc66;
 }
+
+/* === DESKTOP === */
+@media (min-width: 900px) {
+  #character-slider {
+    transform: translateX(0) !important; /* vždy viditelný */
+  }
+
+  #images-toggle {
+    display: none !important; /* tlačítko schovat */
+  }
+}
+
+/* === MOBIL / TABLET === */
+@media (max-width: 899px) {
+  #character-slider {
+    transform: translateX(100%); /* panel schovaný */
+  }
+
+  #character-slider.visible {
+    transform: translateX(0);  /* zobrazit když klikne */
+  }
+
+  #images-toggle {
+    display: block;
+  }
+}
