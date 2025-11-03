@@ -1,6 +1,6 @@
 // === Globální favicon pro všechny podstránky ===
 (function setGlobalFavicon() {
-  const url = "https://mindor-tv.github.io/popel_trisiasu.github.io/assets/z_popela_logo.png";
+  const url = "https://mindor-tv.github.io/popel_trisiasu/assets/z_popela_logo.png";
 
   // smažeme staré favicony (pokud nějaké jsou)
   document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]').forEach(el => el.remove());
@@ -40,19 +40,19 @@
   // iOS/Android PWA dlaždice (nebývá na škodu)
   upsert("apple-touch-icon", url, {});
 
-})("https://mindor-tv.github.io/popel_trisiasu.github.io/assets/z_popela_logo.png");
+})("https://mindor-tv.github.io/popel_trisiasu/assets/z_popela_logo.png");
 
 
 // --- Konfigurace menu ---
 const menuData = {
-  "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu.github.io/index.html",
+  "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu/index.html",
   "Postavy": [
-    { name: "Koblížkova postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/koblizek/character.html" },
-    { name: "Eminky postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/eminka/character.html" },
-    { name: "Fílova postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/filip/character.html" },
-    { name: "Kájina postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/kaja/character.html" },
-    { name: "Žandy postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/zanda/character.html" },
-    { name: "Tobyho postava", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/postavy/toby/character.html" }
+    { name: "Koblížkova postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/koblizek/character.html" },
+    { name: "Eminky postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/eminka/character.html" },
+    { name: "Fílova postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/filip/character.html" },
+    { name: "Kájina postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/kaja/character.html" },
+    { name: "Žandy postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/zanda/character.html" },
+    { name: "Tobyho postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/toby/character.html" }
   ],
   "Mapy": [
     { name: "Oblagun", url: "mapy/oblagun.html" },
@@ -62,16 +62,16 @@ const menuData = {
     { name: "Mistr Kael", url: "npc/kael.html" }
   ],
   "Bohové": [
-    { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/bohove.html" },
-    { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/marluvar.html" },
-    { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/ilnur.html" },
-    { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/glordi.html" },
-    { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/malte.html" },
-    { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/monaryn.html" },
-    { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu.github.io/bohove/torlien.html" }
+    { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
+    { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/marluvar.html" },
+    { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/ilnur.html" },
+    { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/glordi.html" },
+    { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/malte.html" },
+    { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/monaryn.html" },
+    { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/torlien.html" }
   ],
-  "Dějiny Oblagunu": "https://mindor-tv.github.io/popel_trisiasu.github.io/dejiny-oblagunu.html",
-  "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu.github.io/cheatsheet.html"
+  "Dějiny Oblagunu": "https://mindor-tv.github.io/popel_trisiasu/dejiny-oblagunu.html",
+  "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
 };
 
 // === LEVÉ MENU ===
