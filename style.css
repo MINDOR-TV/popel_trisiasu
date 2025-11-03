@@ -123,16 +123,17 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* výška celé obrazovky minus hlavička */
   height: calc(100vh - 60px);
   margin-top: 60px;
   text-align: center;
-  backdrop-filter: none;
+  padding: 2rem 1rem; /* Přidáme horní i spodní mezeru */
 }
 
 .logo {
-  display: block;
-  width: auto;
-  max-height: 100%;
+  max-width: 70%;
+  height: auto;
+  margin: 2rem auto; /* horní i spodní mezera kolem loga */
 }
 
 /* ===== HLAVNÍ OBSAH ===== */
