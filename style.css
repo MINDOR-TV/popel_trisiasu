@@ -123,17 +123,17 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* výška celé obrazovky minus hlavička */
-  height: calc(100vh - 60px);
-  margin-top: 60px;
+  /* nastavíme min‑výšku, ale nepřekročíme celou obrazovku bez mezer */
+  min-height: calc(100vh - 120px); /* 60px pro hlavičku + 60px spodní mezera */
+  margin-top: 60px; /* mezera od hlavičky */
   text-align: center;
-  padding: 2rem 1rem; /* Přidáme horní i spodní mezeru */
+  padding: 0 1rem;
 }
 
 .logo {
-  max-width: 70%;
+  max-width: 60%; /* menší než dříve, aby se vešlo */
   height: auto;
-  margin: 2rem auto; /* horní i spodní mezera kolem loga */
+  margin: 2rem auto; /* mezera nad a pod logem */
 }
 
 /* ===== HLAVNÍ OBSAH ===== */
@@ -292,12 +292,11 @@ header {
 /* Mobilní verze */
 @media (max-width: 899px) {
   .hero {
-    height: auto; /* nech výšku volnou */
+    min-height: auto;
     padding: 2rem 1rem;
   }
-
   .logo {
-    max-width: 50%; /* menší logo */
-    margin-bottom: 1.5rem;
+    max-width: 50%;
+    margin: 1.5rem auto;
   }
 }
