@@ -51,7 +51,7 @@ const menuData = {
     { name: "Celeana Dawnshield", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/celeana/character.html" },
     { name: "Bogdan", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/bogdan/character.html" },
     { name: "Ofélie", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/ofelie/character.html" },
-    { name: "Žandy postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/zanda/character.html" },
+    { name: "Aeriel", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/aeriel/character.html" },
     { name: "Tobyho postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/toby/character.html" }
   ],
   "Mapy": [
