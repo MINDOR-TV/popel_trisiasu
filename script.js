@@ -54,7 +54,6 @@ const menuData = {
     { name: "Aeriel", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/aeriel/character.html" },
     { name: "Tobyho postava", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/toby/character.html" }
   ],
-  "Deník": "https://mindor-tv.github.io/popel_trisiasu/poznamky/denik.html"
   "Mapy": [
     { name: "Oblagun", url: "mapy/oblagun.html" },
     { name: "Kontinent Trisias", url: "mapy/trisias.html" }
