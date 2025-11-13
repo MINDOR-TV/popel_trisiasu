@@ -156,13 +156,13 @@ if (imagesToggle && characterSlider) {
 const images = document.querySelectorAll('.character-image');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.querySelector('.lightbox-img');
+const lightboxCaption = document.querySelector('.lightbox-caption');
 const closeBtn = document.querySelector('.close');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 
 let currentIndex = 0;
 
-// otevření lightboxu po kliknutí na obrázek
 images.forEach((img, index) => {
   img.addEventListener('click', () => {
     currentIndex = index;
@@ -171,12 +171,12 @@ images.forEach((img, index) => {
   });
 });
 
-// funkce pro zobrazení obrázku podle indexu
 function showImage() {
-  lightboxImg.src = images[currentIndex].src;
+  const img = images[currentIndex];
+  lightboxImg.src = img.src;
+  lightboxCaption.textContent = img.getAttribute('data-caption') || '';
 }
 
-// šipky
 nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % images.length;
   showImage();
@@ -187,22 +187,20 @@ prevBtn.addEventListener('click', () => {
   showImage();
 });
 
-// zavření lightboxu
 closeBtn.addEventListener('click', () => {
   lightbox.style.display = 'none';
 });
 
-// zavření kliknutím mimo obrázek
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox) lightbox.style.display = 'none';
 });
 
-// zavření ESC + navigace šipkami
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') lightbox.style.display = 'none';
   if (e.key === 'ArrowRight') nextBtn.click();
   if (e.key === 'ArrowLeft') prevBtn.click();
 });
+
 
 
 
