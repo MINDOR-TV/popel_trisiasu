@@ -148,12 +148,12 @@ header {
 }
 
 .content__section {
-  background: rgba(43, 43, 43, 0.4); /* původní barva + průhlednost */
-  backdrop-filter: blur(6px);         /* jemné rozmazání pozadí */
+  background: rgba(43, 43, 43, 0.3); /* původní barva + průhlednost */
+  backdrop-filter: blur(2px);         /* jemné rozmazání pozadí */
   padding: 1rem 1.5rem;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .content__section h2 {
