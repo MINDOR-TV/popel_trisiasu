@@ -148,7 +148,7 @@ header {
 }
 
 .content__section {
-  background: rgba(43, 43, 43, 0.8); /* původní barva + průhlednost */
+  background: rgba(43, 43, 43, 0.4); /* původní barva + průhlednost */
   backdrop-filter: blur(6px);         /* jemné rozmazání pozadí */
   padding: 1rem 1.5rem;
   border-radius: 10px;
