@@ -169,9 +169,9 @@ header {
 /* ===== STRÁNKA POSTAVY ===== */
 .character-page {
   display: flex;
-  margin-top: 60px;
-  padding: 1rem;
   justify-content: center;
+  margin-top: 80px;
+  padding: 1rem;
 }
 
 .character-details {
@@ -193,6 +193,31 @@ header {
   color: #eee;
   line-height: 1.5;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.character-container {
+  width: 90%;
+  max-width: 1000px;              /* široký rámeček */
+  background: rgba(43, 43, 43, 0.7); /* tmavý, lehce průhledný */
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  color: #eee;
+}
+
+.character-container h2.character-name {
+  color: #ffcc66;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.character-description {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .character-details a {
@@ -269,6 +294,22 @@ header {
   margin: 0;
 }
 
+.adventures-title {
+  color: #ffcc66;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.adventure h4 {
+  color: #ffcc66;
+  margin-bottom: 0.5rem;
+}
+
+.adventure p {
+  line-height: 1.6;
+  text-align: justify;
+}
 /* Tlačítko pro otevření pravého slideru */
 .images-button {
   position: absolute;
