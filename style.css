@@ -172,6 +172,10 @@ header {
   justify-content: center;
   margin-top: 80px;
   padding: 1rem;
+  background-image: url('https://mindor-tv.github.io/popel_trisiasu/postavy/ofelie/images/Ofelie_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .character-details {
