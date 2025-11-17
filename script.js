@@ -55,8 +55,8 @@ const menuData = {
     { name: "Thalor", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/thalor/character.html" }
   ],
   "Mapy": [
-    { name: "Oblagun", url: "https://mindor-tv.github.io/popel_trisiasumapy/oblagun.html" },
-    { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasumapy/trisias.html" }
+    { name: "Oblagun", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
+    { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" }
   ],
   "NPC": [
     { name: "Mistr Kael", url: "npc/kael.html" }
