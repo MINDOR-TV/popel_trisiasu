@@ -56,7 +56,7 @@ const menuData = {
   ],
   "Mapy": [
     { name: "Oblagun", url: "mapy/oblagun.html" },
-    { name: "Kontinent Trisias", url: "mapy/trisias.html" }
+    { name: "Trisias", url: "mapy/trisias.html" }
   ],
   "NPC": [
     { name: "Mistr Kael", url: "npc/kael.html" }
