@@ -201,6 +201,70 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') prevBtn.click();
 });
 
+// === MAPOVÝ ZOOM LENS (přiblížené okénko na mapě) ===
+(function () {
+  const img = document.getElementById('map');
+  const lens = document.getElementById('map-lens');
+  if (!img || !lens) return; // nejsme na mapové stránce
+
+  const zoom = 2; // jak moc přiblížit (klidně změň na 2.5 / 3)
+
+  function setupBackground() {
+    const w = img.clientWidth;
+    const h = img.clientHeight;
+    lens.style.backgroundImage = `url('${img.src}')`;
+    lens.style.backgroundSize = w * zoom + 'px ' + h * zoom + 'px';
+  }
+
+  if (img.complete) {
+    setupBackground();
+  } else {
+    img.addEventListener('load', setupBackground);
+  }
+
+  function getCursorPos(e) {
+    const rect = img.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    return { x, y };
+  }
+
+  function moveLens(e) {
+    e.preventDefault();
+    const pos = getCursorPos(e);
+
+    let x = pos.x - lens.offsetWidth / 2;
+    let y = pos.y - lens.offsetHeight / 2;
+
+    const maxX = img.clientWidth - lens.offsetWidth;
+    const maxY = img.clientHeight - lens.offsetHeight;
+
+    if (x < 0) x = 0;
+    if (y < 0) y = 0;
+    if (x > maxX) x = maxX;
+    if (y > maxY) y = maxY;
+
+    lens.style.left = x + 'px';
+    lens.style.top = y + 'px';
+
+    const bgX = -x * zoom;
+    const bgY = -y * zoom;
+    lens.style.backgroundPosition = bgX + 'px ' + bgY + 'px';
+  }
+
+  img.addEventListener('mouseenter', () => {
+    lens.style.display = 'block';
+  });
+
+  img.addEventListener('mouseleave', () => {
+    lens.style.display = 'none';
+  });
+
+  img.addEventListener('mousemove', moveLens);
+  lens.addEventListener('mousemove', moveLens);
+})();
+
+
 
 
 
