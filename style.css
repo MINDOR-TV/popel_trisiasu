@@ -440,3 +440,77 @@ header {
   max-width: 80%;
   line-height: 1.4;
 }
+
+/* ===== MAPOVÉ STRÁNKY ===== */
+
+.map-page {
+  min-height: 100vh;
+  padding: 80px 1rem 2rem;            /* mezera pod headerem */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(43, 43, 43, 0.3);  /* lehce průhledné jako ostatní bloky */
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  color: #eee;
+}
+
+.map-title {
+  color: #ffcc66;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.map-description {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.map-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.map-image:hover {
+  transform: scale(1.02);
+}
+
+.map-note {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Lepší odsazení na mobilech */
+@media (max-width: 899px) {
+  .map-container {
+    padding: 1.5rem 1.2rem;
+    border-radius: 12px;
+  }
+
+  .map-title {
+    font-size: 1.8rem;
+  }
+}
