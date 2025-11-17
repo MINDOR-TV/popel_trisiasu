@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oblagun</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <h1 class="header-title">Z Popela</h1>
+    <nav id="side-menu" class="menu"></nav>
+  </header>
+
+  <main class="map-page">
+    <div class="map-container">
+      <h2 class="map-title">Oblagun</h2>
+
+      <div class="map-image-wrapper">
+        <!-- TADY POUZE VYMĚNÍTE SRC ZA KONKRÉTNÍ MAPU -->
+        <img
+          src="../assets/mapy/Oblagun.jpeg"
+          alt="Mapa Oblagunu"
+          class="map-image character-image"
+          data-caption="Oblagun"
+        >
+      </div>
+
+    </div>
+  </main>
+
+  <!-- LIGHTBOX – pokud už ho máte v jiných podstránkách, můžete použít stejný kód -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="" alt="">
+      <div class="lightbox-caption"></div>
+    </div>
+    <span class="next">&#10095;</span>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
