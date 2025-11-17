@@ -18,29 +18,19 @@
       <h2 class="map-title">Oblagun</h2>
 
       <div class="map-image-wrapper">
-        <!-- TADY POUZE VYMĚNÍTE SRC ZA KONKRÉTNÍ MAPU -->
+        <!-- hlavní mapa – všimni si, že NEMÁ class="character-image" -->
         <img
-          src="../assets/mapy/Oblagun.jpeg"
-          alt="Mapa Oblagunu"
-          class="map-image character-image"
-          data-caption="Oblagun"
+          id="map"
+          src="../assets/mapy/Orisias.jpeg"
+          alt="Mapa Varky"
+          class="map-image"
         >
-      </div>
 
+        <!-- okénko s přiblížením -->
+        <div id="map-lens" class="map-lens"></div>
+      </div>
     </div>
   </main>
-
-  <!-- LIGHTBOX – pokud už ho máte v jiných podstránkách, můžete použít stejný kód -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <span class="prev">&#10094;</span>
-    <div class="lightbox-content">
-      <img class="lightbox-img" src="" alt="">
-      <div class="lightbox-caption"></div>
-    </div>
-    <span class="next">&#10095;</span>
-  </div>
-
   <script src="../script.js"></script>
 </body>
 </html>
