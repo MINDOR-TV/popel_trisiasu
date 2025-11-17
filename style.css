@@ -445,7 +445,7 @@ header {
 
 .map-page {
   min-height: 100vh;
-  padding: 80px 1rem 2rem;            /* mezera pod headerem */
+  padding: 80px 1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -454,8 +454,8 @@ header {
 
 .map-container {
   width: 100%;
-  max-width: 1000px;
-  background: rgba(43, 43, 43, 0.3);  /* lehce průhledné jako ostatní bloky */
+  max-width: 1200px;
+  background: rgba(43, 43, 43, 0.3);
   backdrop-filter: blur(2px);
   border-radius: 16px;
   padding: 2rem 2.5rem;
@@ -477,6 +477,7 @@ header {
 }
 
 .map-image-wrapper {
+  position: relative;                 /* kvůli okénku */
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
@@ -487,12 +488,6 @@ header {
   display: block;
   width: 100%;
   height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.map-image:hover {
-  transform: scale(1.02);
 }
 
 .map-note {
@@ -503,7 +498,21 @@ header {
   text-align: right;
 }
 
-/* Lepší odsazení na mobilech */
+/* přibližovací okénko */
+.map-lens {
+  position: absolute;
+  display: none;                      /* ukáže se jen při hoveru */
+  width: 300px;
+  height: 180px;
+  border: 3px solid #ffcc66;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.25);  /* lehké stmavení pozadí */
+  z-index: 5;
+}
+
+/* mobil – menší okénko */
 @media (max-width: 899px) {
   .map-container {
     padding: 1.5rem 1.2rem;
@@ -512,5 +521,10 @@ header {
 
   .map-title {
     font-size: 1.8rem;
+  }
+
+  .map-lens {
+    width: 220px;
+    height: 132px;
   }
 }
