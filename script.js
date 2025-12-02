@@ -59,8 +59,8 @@ const menuData = {
     { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" }
   ],
   "NPC": [
-    { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/Plea.html" },
-    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/Stepan.html" }
+    { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/plea.html" },
+    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" }
   ],
   "Bohové": [
     { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
