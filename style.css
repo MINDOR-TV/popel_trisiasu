@@ -326,7 +326,7 @@ header {
 }
 
 /* === DESKTOP === */
-@media (min-width: 1101px) {
+@media (min-width: 1201px) {
   #character-slider {
     transform: translateX(0) !important; /* vždy viditelný */
   }
@@ -337,7 +337,7 @@ header {
 }
 
 /* Mobilní verze */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .hero {
     height: auto;                /* nech výšku volnou pro mobil */
     padding: 2rem 1rem;
