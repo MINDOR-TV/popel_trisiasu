@@ -60,7 +60,9 @@ const menuData = {
   ],
   "NPC": [
     { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/plea.html" },
-    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" }
+    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" },
+    { name: "Starosta Velebníček", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/starosta_velebnicek.html" }
+
   ],
   "Bohové": [
     { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
