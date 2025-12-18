@@ -47,7 +47,7 @@
 const menuData = {
   "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu/index.html",
   "Družina": [
-    { name: "Stogorin", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/stogorin/character.html" },
+    //{ name: "Stogorin", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/stogorin/character.html" },
     { name: "Celeana Dawnshield", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/celeana/character.html" },
     { name: "Bogdan", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/bogdan/character.html" },
     { name: "Ofélie", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/ofelie/character.html" },
