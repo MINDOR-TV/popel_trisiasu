@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monaryn – Bohové</title>
-  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu/style.css" />
+  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu/style.css">
 </head>
 <body>
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar__header">
-      <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
-      <a class="brand" href="index.html">Popel Trisiasu</a>
-    </div>
-  </aside>
+  <header>
+    <button class="menu-button" id="menu-toggle">☰</button>
+    <h1 class="header-title">Bohové</h1>
+    <!--<button class="images-button" id="images-toggle">🖼️</button>-->
+  </header>
 
-  <main class="content">
-    <header class="content__header">
-      <h1>Monaryn</h1>
-      <p class="note">Bohyně Trisiasu. Mrtvá.</p>
-    </header>
+  <!-- Levé menu -->
+  <nav id="side-menu" class="menu"></nav>
 
-    <section class="content__section panel">
-      <h2 class="h">Podstata</h2>
-      <p>Monaryn pečovala o krásu a reprezentaci kontinentu. Z paranoie připravila pojištění: stvořila modrého draka Zindera a golema Gunnera, aby její země odolala cizí moci.</p>
-      <h2 class="h">Odkaz</h2>
-      <p>Po její smrti Zinder drancoval, dokud s ním lidé neuzavřeli dohodu a neuložili jej ke spánku v Trisijském trezoru. Úder Gunnera rozdrtil pevninu a zrodil souostroví. Monarynina ikonografie zdobí ruiny i Sky Reach.</p>
+  <main class="character-page">
+    <section class="character-container">
+      <h2 class="character-name">Monaryn</h2>
+      <p class="character-description">
+        Bohyně Trisiasu. Mrtvá.
+      </p>
+      <div class="adventure">
+        <h4>Podstata</h4>
+        <p>Monaryn pečovala o krásu a reprezentaci kontinentu. Z paranoie připravila pojištění: stvořila modrého draka Zindera a golema Gunnera, aby její země odolala cizí moci.</p>
+        <h4>Odkaz</h4>
+        <p>Po její smrti Zinder drancoval, dokud s ním lidé neuzavřeli dohodu a neuložili jej ke spánku v Trisijském trezoru. Úder Gunnera rozdrtil pevninu a zrodil souostroví. Monarynina ikonografie zdobí ruiny i Sky Reach.</p>
+      </div>
     </section>
   </main>
+
+  <!-- Pravý slider s obrázky 
+  <aside id="character-slider" class="character-slider">
+    <!-- Sem můžeš doplnit obrázky, pokud budou 
+    <img src="images/monaryn.png" alt="Monaryn" class="character-image" data-caption="Monaryn">
+  </aside> -->
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="">
+      <p class="lightbox-caption"></p>
+    </div>
+    <span class="next">&#10095;</span>
+  </div>
 
   <script src="https://mindor-tv.github.io/popel_trisiasu/script.js" defer></script>
 </body>
 </html>
+
