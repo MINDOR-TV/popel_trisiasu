@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marlůvar – Bohové</title>
-  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu/style.css" />
+  <link rel="stylesheet" href="https://mindor-tv.github.io/popel_trisiasu/style.css">
 </head>
 <body>
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar__header">
-      <button class="sidebar__toggle" id="sidebarToggle" aria-label="Menu">☰</button>
-      <a class="brand" href="index.html">Popel Trisiasu</a>
-    </div>
-  </aside>
+  <header>
+    <button class="menu-button" id="menu-toggle">☰</button>
+    <h1 class="header-title">Bohové</h1>
+   <!-- <button class="images-button" id="images-toggle">🖼️</button> -->
+  </header>
 
-  <main class="content">
-    <header class="content__header">
-      <h1>Marlůvar</h1>
-      <p class="note">Stvořitel Oblagunu. Živý, ale nepřítomný.</p>
-    </header>
+  <!-- Levé menu -->
+  <nav id="side-menu" class="menu"></nav>
 
-    <section class="content__section panel">
-      <h2 class="h">Podstata</h2>
-      <p>Marlůvar stvořil svět jako výsledek sázky se svými bratry Ilnurem a Glordiem. Jeho tvořivost dává pevninám tvar a zákonitosti, jejichž ozvěny přetrvávají i bez jeho přímé vůle.</p>
-      <h2 class="h">Stav</h2>
-      <p>Po smrti svých dětí upadl do zoufalství a odešel na druhou stranu vesmíru. Kněží tvrdí, že zřídkavé zázraky jsou pouze dozvuky pradávných pravidel, nikoli vědomá odpověď.</p>
-      <h2 class="h">Známá místa kultu</h2>
-      <p>Staré svatyně na severu Trisiasu a zapomenuté oltáře v ruinách Monaryn. Většina je opuštěná, některé nadále fungují jako poutní místa.</p>
+  <main class="character-page">
+    <section class="character-container">
+      <h2 class="character-name">Marlůvar</h2>
+      <p class="character-description">
+        Stvořitel Oblagunu. Živý, ale nepřítomný.
+      </p>
+      <div class="adventure">
+        <h4>Podstata</h4>
+        <p>Marlůvar stvořil svět jako výsledek sázky se svými bratry Ilnurem a Glordiem. Jeho tvořivost dává pevninám tvar a zákonitosti, jejichž ozvěny přetrvávají i bez jeho přímé vůle.</p>
+        <h4>Stav</h4>
+        <p>Po smrti svých dětí upadl do zoufalství a odešel na druhou stranu vesmíru. Kněží tvrdí, že zřídkavé zázraky jsou pouze dozvuky pradávných pravidel, nikoli vědomá odpověď.</p>
+        <h4>Známá místa kultu</h4>
+        <p>Staré svatyně na severu Trisiasu a zapomenuté oltáře v ruinách Monaryn. Většina je opuštěná, některé nadále fungují jako poutní místa.</p>
+      </div>
     </section>
   </main>
+
+  <!-- Pravý slider s obrázky 
+  <aside id="character-slider" class="character-slider">
+    <!-- Sem můžeš doplnit obrázky, pokud budou 
+    <img src="images/marlubar.png" alt="Marlůvar" class="character-image" data-caption="Marlůvar">
+  </aside> -->
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="">
+      <p class="lightbox-caption"></p>
+    </div>
+    <span class="next">&#10095;</span>
+  </div>
 
   <script src="https://mindor-tv.github.io/popel_trisiasu/script.js" defer></script>
 </body>
