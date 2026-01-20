@@ -1,0 +1,17 @@
+Družina vyráží na svatbu.
+  Dostávají se k rozbořenému mostu. 
+  U mostu je Troll, který se jmenuje Dubo.
+  Dubo smrdí chlastem, a vybírá míto za přejití rozpadlého mostu.
+  Zabít či nezabít:
+    zabít:
+      S Trollem je těžký souboj. Pokud se jim podaří ho zabít, obyvatelé vesnice Hvozdlina neboudou nadšení, jelikož 
+      Troll měl udržovat most, což také dělal, dokud někdo nezabil jeho ženušku.
+      Starosta a stráže na druhou stranu jim vyplatí odměnu, jelikož se trolla chtěli stejně zbavit.
+    nezabít:
+      Ve vesnici Hvozdlina najdou zakázku na daného Trolla. Když by se o něm vyptávali budou moci zjistit,
+      že Trolla mají obyvatelé Hvozdliny rádi, jelikož jim udržuje most, a odlákává různé pobudy a lapky.
+      poslední dobou však Troll začal pít a přestal se starat o most, který se poté zhroutil.
+      pokud by si chtěli znovu promluvit s Dudou tak zjistí že mu byla zabita žena. Troll by chtěl pomstu nad svojí ženou, 
+      a tak slíbí že přestane pít a začne zase opravovat most. 
+      Starosta ale není nadšený z toho že nikdo nesplnil zakázku a od sedláků nebude nějak velká odměna.
+      
