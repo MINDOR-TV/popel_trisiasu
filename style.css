@@ -328,11 +328,12 @@ header {
 /* ===== FOOTER ===== */
 .site-footer {
   width: 100%;
-  padding: 1rem 0;
-  text-align: center;
-  background: rgba(43, 43, 43, 0.4);
-  backdrop-filter: blur(2px);
-  color: #aaa;
+  height: 60px;
+  background-color: #2c2c2c; /* stejná barva jako header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffcc66;
   font-family: "Cinzel", serif;
   font-size: 0.9rem;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
