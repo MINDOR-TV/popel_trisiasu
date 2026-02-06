@@ -68,12 +68,17 @@ const menuData = {
   ],
   "Bohové": [
     { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
-    { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/marluvar.html" },
-    { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/ilnur.html" },
-    { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/glordi.html" },
-    { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/malte.html" },
-    { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/monaryn.html" },
-    { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/torlien.html" }
+    { "Vyšší Pantheon" [
+      { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/marluvar.html" },
+      { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/ilnur.html" },
+      { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/glordi.html" },
+      { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/malte.html" },
+      { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/monaryn.html" },
+      { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/torlien.html" }
+    ],
+    { "Nižší Pantheon" [
+      { name: "Mondyl", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/nizsi_bohove/mondyl/mondyl.html" }
+    ],
   ],
   "Dějiny Oblagunu": "https://mindor-tv.github.io/popel_trisiasu/dejiny-oblagunu.html",
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
