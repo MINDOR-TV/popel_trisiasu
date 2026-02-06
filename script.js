@@ -134,16 +134,27 @@ Object.keys(menuData).forEach(category => {
   const section = document.createElement("div");
   section.classList.add("menu-section");
 
+  const value = menuData[category];
+
+  // === 1) Kategorie je PŘÍMÝ ODKAZ ===
+  if (typeof value === "string") {
+    const link = document.createElement("a");
+    link.textContent = category;
+    link.href = value;
+    link.classList.add("menu-category", "direct-link");
+
+    section.appendChild(link);
+    menuContainer.appendChild(section);
+    return;
+  }
+
+  // === 2) Kategorie má submenu ===
   const header = document.createElement("div");
   header.textContent = category;
   header.classList.add("menu-category");
   section.appendChild(header);
 
-  const submenu = createSubmenu(
-    typeof menuData[category] === "string"
-      ? [{ name: category, url: menuData[category] }]
-      : menuData[category]
-  );
+  const submenu = createSubmenu(value);
 
   header.addEventListener("click", () => {
     submenu.classList.toggle("visible");
@@ -152,6 +163,7 @@ Object.keys(menuData).forEach(category => {
   section.appendChild(submenu);
   menuContainer.appendChild(section);
 });
+
 
   toggleBtn.addEventListener("click", () => {
     menuContainer.classList.toggle("visible");
