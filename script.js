@@ -153,10 +153,6 @@ Object.keys(menuData).forEach(category => {
   menuContainer.appendChild(section);
 });
 
-
-    menuContainer.appendChild(section);
-  });
-
   toggleBtn.addEventListener("click", () => {
     menuContainer.classList.toggle("visible");
   });
