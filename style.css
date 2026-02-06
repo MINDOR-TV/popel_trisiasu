@@ -67,6 +67,33 @@ main {
   flex: 1;
 }
 
+/* ===== VNOŘENÉ SUBMENU (3. úroveň a více) ===== */
+
+.submenu .nested-category {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.submenu .nested-category:hover {
+  color: #ffcc66;
+}
+
+.submenu .submenu {
+  margin-left: 1.5rem;
+  border-left: 1px solid rgba(255, 204, 102, 0.2);
+  padding-left: 0.7rem;
+}
+
+.submenu .submenu a {
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.submenu .submenu.visible {
+  max-height: 500px;
+}
+
 /* ===== LEVÉ MENU ===== */
 .menu {
   position: fixed;
