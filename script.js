@@ -89,39 +89,70 @@ const menuContainer = document.getElementById("side-menu");
 const toggleBtn = document.getElementById("menu-toggle");
 
 if (menuContainer && toggleBtn) {
-  Object.keys(menuData).forEach(category => {
-    const section = document.createElement("div");
-    section.classList.add("menu-section");
+  function createSubmenu(items) {
+  const submenu = document.createElement("div");
+  submenu.classList.add("submenu");
 
-    if (typeof menuData[category] === "string") {
+  items.forEach(item => {
+    if (typeof item === "string") {
+      // jednoduchý odkaz
       const link = document.createElement("a");
-      link.textContent = category;
-      link.href = menuData[category];
-      link.classList.add("menu-category");
-      section.appendChild(link);
-    } else {
-      const header = document.createElement("div");
-      header.textContent = category;
-      header.classList.add("menu-category");
-      section.appendChild(header);
+      link.textContent = item;
+      link.href = item;
+      submenu.appendChild(link);
+    } 
+    else if (item.url) {
+      // klasický odkaz
+      const link = document.createElement("a");
+      link.textContent = item.name;
+      link.href = item.url;
+      submenu.appendChild(link);
+    } 
+    else if (typeof item === "object") {
+      // vnořená sekce (např. Vyšší Pantheon)
+      const key = Object.keys(item)[0];
 
-      const submenu = document.createElement("div");
-      submenu.classList.add("submenu");
+      const nestedHeader = document.createElement("div");
+      nestedHeader.textContent = key;
+      nestedHeader.classList.add("menu-category", "nested-category");
 
-      menuData[category].forEach(item => {
-        const link = document.createElement("a");
-        link.textContent = item.name;
-        link.href = item.url;
-        submenu.appendChild(link);
+      const nestedSubmenu = createSubmenu(item[key]);
+
+      nestedHeader.addEventListener("click", () => {
+        nestedSubmenu.classList.toggle("visible");
       });
 
-      section.appendChild(submenu);
-
-      // klik pro animované rozvinutí
-      header.addEventListener("click", () => {
-        submenu.classList.toggle("visible");
-      });
+      submenu.appendChild(nestedHeader);
+      submenu.appendChild(nestedSubmenu);
     }
+  });
+
+  return submenu;
+}
+
+Object.keys(menuData).forEach(category => {
+  const section = document.createElement("div");
+  section.classList.add("menu-section");
+
+  const header = document.createElement("div");
+  header.textContent = category;
+  header.classList.add("menu-category");
+  section.appendChild(header);
+
+  const submenu = createSubmenu(
+    typeof menuData[category] === "string"
+      ? [{ name: category, url: menuData[category] }]
+      : menuData[category]
+  );
+
+  header.addEventListener("click", () => {
+    submenu.classList.toggle("visible");
+  });
+
+  section.appendChild(submenu);
+  menuContainer.appendChild(section);
+});
+
 
     menuContainer.appendChild(section);
   });
