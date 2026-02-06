@@ -94,6 +94,17 @@ main {
   max-height: 500px;
 }
 
+/* Přímé odkazy v menu (bez rozbalování) */
+.menu-category.direct-link {
+  cursor: pointer;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.menu-category.direct-link:hover {
+  color: #ffcc66;
+}
+
 /* ===== LEVÉ MENU ===== */
 .menu {
   position: fixed;
