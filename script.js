@@ -75,10 +75,10 @@ const menuData = {
       { name: "Malté", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/malte.html" },
       { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/monaryn.html" },
       { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/torlien.html" }
-    ],
+    ]},
     { "Nižší Pantheon": [
       { name: "Mondyl", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/nizsi_bohove/mondyl/mondyl.html" }
-    ],
+    ]},
   ],
   "Dějiny Oblagunu": "https://mindor-tv.github.io/popel_trisiasu/dejiny-oblagunu.html",
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
