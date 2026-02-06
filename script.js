@@ -68,7 +68,7 @@ const menuData = {
   ],
   "Bohové": [
     { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
-    { "Vyšší Pantheon" [
+    { "Vyšší Pantheon": [
       { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/marluvar.html" },
       { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/ilnur.html" },
       { name: "Glordi", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/glordi.html" },
@@ -76,7 +76,7 @@ const menuData = {
       { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/monaryn.html" },
       { name: "Tórlien", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/torlien.html" }
     ],
-    { "Nižší Pantheon" [
+    { "Nižší Pantheon": [
       { name: "Mondyl", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/nizsi_bohove/mondyl/mondyl.html" }
     ],
   ],
