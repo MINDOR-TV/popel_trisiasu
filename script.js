@@ -59,12 +59,13 @@ const menuData = {
     { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" }
   ],
   "NPC": [
+    { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol.html" },
     { name: "Folken", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/folken.html" },
     { name: "Oren Talld", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/oren_talld.html" },
     { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/plea.html" },
     { name: "Starosta Velebníček", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/starosta_velebnicek.html" },
-    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" },
-    { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol.html" }
+    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" }
+    
 
   ],
   "Bohové": [
