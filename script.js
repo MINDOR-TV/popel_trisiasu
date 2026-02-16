@@ -59,6 +59,8 @@ const menuData = {
     { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" }
   ],
   "NPC": [
+    { name: "Aurora Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/aurora.html" },
+    { name: "Benjamin Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/benjamin.html" },
     { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol.html" },
     { name: "Folken", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/folken.html" },
     { name: "Oren Talld", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/oren_talld.html" },
