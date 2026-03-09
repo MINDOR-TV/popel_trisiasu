@@ -67,12 +67,17 @@ const menuData = {
     { name: "Trilldas", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trilldas/trilldas.html" }
   ],
   "NPC": [
+    //{ name: "Ariana Minstrell", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/ariana_minstrell.html" },
     { name: "Aurora Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/aurora.html" },
     { name: "Benjamin Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/benjamin.html" },
     { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol.html" },
+    { name: "Eliška ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/eliska_ze_mlejna.html" },
     { name: "Folken", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/folken.html" },
+    { name: "Jindřich ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/jindrich_ze_mlejna.html" },
     { name: "Oren Talld", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/oren_talld.html" },
+    //{ name: "Pavel Perlík", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/pavel_perlik.html" },
     { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/plea.html" },
+    //{ name: "Slim", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/slim_sarajev.html" },
     { name: "Starosta Velebníček", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/starosta_velebnicek.html" },
     { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" }
     
