@@ -55,17 +55,12 @@ const menuData = {
     { name: "Thalor", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/thalor/character.html" }
   ],
   "Mapy": [
-    /*{ name: "Popelgrad", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    { name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    { name: "Zlatohrádek", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    */
     { name: "Oblagun", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
     { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" },
   ],
   "Místa": [
-    /*{ name: "Popelgrad", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    { name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
+    { name: "Popelgrad", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
+    /*{ name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
     { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
     { name: "Zlatohrádek", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
     */
