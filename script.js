@@ -59,9 +59,10 @@ const menuData = {
     { name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
     { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
     { name: "Zlatohrádek", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    { name: "Trilldas", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },*/
+    */
     { name: "Oblagun", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/oblagun.html" },
-    { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" }
+    { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" },
+    { name: "Trilldas", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trilldas/trilldas.html" }
   ],
   "NPC": [
     { name: "Aurora Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/aurora.html" },
