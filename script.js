@@ -67,7 +67,7 @@ const menuData = {
     { name: "Trilldas", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trilldas/trilldas.html" }
   ],
   "NPC": [
-    { name: "Ariana Minstrell", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/ariana_minstrell.html" },
+    { name: "Ariana Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/ariana_minstrell.html" },
     { name: "Aurora Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/aurora.html" },
     { name: "Benjamin Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/benjamin.html" },
     { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol.html" },
