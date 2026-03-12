@@ -71,6 +71,7 @@ const menuData = {
     { name: "Aurora Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/aurora.html" },
     { name: "Benjamin Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/benjamin.html" },
     { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol.html" },
+    { name: "Dudo", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/dudo.html" },
     { name: "Eliška ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/eliska_ze_mlejna.html" },
     { name: "Folken", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/folken.html" },
     { name: "Jindřich ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/jindrich_ze_mlejna.html" },
@@ -80,9 +81,8 @@ const menuData = {
     { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/plea.html" },
     //{ name: "Slim", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/slim_sarajev.html" },
     { name: "Starosta Velebníček", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/starosta_velebnicek.html" },
-    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" }
-    
-
+    { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" },
+    { name: "Vaelor Minstrell", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/vaelor_minstrell.html" }
   ],
   "Bohové": [
     { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
