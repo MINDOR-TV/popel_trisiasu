@@ -112,7 +112,7 @@ const menuData = {
     { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" },
     { name: "Vaelor Minstrell", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/vaelor_minstrell.html" }
   ],
-  "Bohové": [
+  "Božstvo": [
     { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
     { "Vyšší Pantheon": [
       { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/marluvar.html" },
