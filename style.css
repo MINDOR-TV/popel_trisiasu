@@ -90,10 +90,6 @@ main {
   font-size: 0.9rem;
 }
 
-.submenu .submenu.visible {
-  max-height: 500px;
-}
-
 /* Přímé odkazy v menu (bez rozbalování) */
 .menu-category.direct-link {
   cursor: pointer;
@@ -161,7 +157,7 @@ main {
 }
 
 .submenu.visible {
-  max-height: 500px;      /* dostatečně vysoké pro všechny položky */
+  max-height: 50000px;      /* dostatečně vysoké pro všechny položky */
 }
 
 /* ===== HERO OBSAH ===== */
