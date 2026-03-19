@@ -67,7 +67,7 @@ const menuData = {
       { "Království Allveir": [
         { name: "Averindor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/averindor/averindor.html" },
         { name: "Černé Hory", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/cerne_hory/cerne_hory.html" },
-        { name: "Horní Krupá", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/horni_krupa/herni_krupa.html" },
+        { name: "Horní Krupá", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/horni_krupa/horni_krupa.html" },
         { name: "Kamenolec", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/kamenolec/kamenolec.html" },
         { name: "Ostrokolí", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/ostrokoli/ostrokoli.html" },
         { name: "Prachovice", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/prachovice/prachovice.html" },
