@@ -59,10 +59,10 @@ const menuData = {
     { name: "Trisias", url: "https://mindor-tv.github.io/popel_trisiasu/mapy/trisias.html" },
   ],
   "Místa": [
-    { "Ostrovy Gunner": [
+    /*{ "Ostrovy Gunner": [
     ]},
     { "Mazerin": [
-    ]},
+    ]},*/
     { "Trisias": [
       { "Království Allveir": [
         { name: "Averindor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/averindor/averindor.html" },
@@ -91,8 +91,8 @@ const menuData = {
         { name: "Zlatohrádek", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/zlatohradek/zlatohradek.html" }
       ]}
     ]},
-    { "Tromin": [
-    ]},
+    /*{ "Tromin": [
+    ]},*/
   ],
   "NPC": [
     { name: "Ariana Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/ariana_minstrell.html" },
