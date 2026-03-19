@@ -77,7 +77,7 @@ const menuData = {
         { name: "Trisiaský Trezor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/trisiasky_trezor.html" }
       ]},
       { "Království Morvallat": [
-        { name: "Dum Karak", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/dum_karak/dum_karak.html" },
+        { name: "Dûm Karak", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/dum_karak/dum_karak.html" },
         { name: "Faünerithler", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/faunerithler/faunerithler.html" },
         { name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/hvozdlina/hvozdlina.html" },
         { name: "Lešijky", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/lesijky/lesijky.html" },
