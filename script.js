@@ -224,10 +224,23 @@ links.forEach(link => {
   const linkUrl = link.href;
   if (linkUrl === currentUrl) {
     link.style.color = "#ffcc66";
-    const panel = link.closest(".submenu");
-    if (panel) panel.classList.add("visible");
-    const parentCategory = link.closest(".menu-section").querySelector(".menu-category");
-    if (parentCategory) parentCategory.style.color = "#ffcc66";
+
+    // Otevře všechny nadřazené submenu
+    let parent = link.parentElement;
+    while (parent && parent !== menuContainer) {
+      if (parent.classList.contains("submenu")) {
+        parent.classList.add("visible");
+      }
+      parent = parent.parentElement;
+    }
+
+    // Zvýrazní všechny nadřazené kategorie
+    let category = link.closest(".menu-section");
+    if (category) {
+      category.querySelectorAll(".menu-category").forEach(cat => {
+        cat.style.color = "#ffcc66";
+      });
+    }
   }
 });
 
