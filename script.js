@@ -65,7 +65,7 @@ const menuData = {
     ]},
     { "Trisias": [
       { "Království Allveir": [
-        { name: "Averindor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/averindor/averindor.html" },
+        /*{ name: "Averindor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/averindor/averindor.html" },
         { name: "Černé Hory", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/cerne_hory/cerne_hory.html" },
         { name: "Horní Krupá", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/horni_krupa/herni_krupa.html" },
         { name: "Kamenolec", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/kamenolec/kamenolec.html" },
@@ -74,21 +74,21 @@ const menuData = {
         { name: "Smrčná", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/smrcna/smrcna.html" },
         { name: "Stříbrná Rokle", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/stribrna_rokle/stribrna_rokle.html" },
         { name: "Suchý Pahorek", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/suchy_pahorek/suchy_pahorek.html" },
-        { name: "Trisiaský Trezor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/trisiasky_trezor.html" }
+        { name: "Trisiaský Trezor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/trisiasky_trezor.html" }*/
       ]},
       { "Království Morvallat": [
-        { name: "Dum Karak", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/dum_karak/dum_karak.html" },
-        { name: "Faünerithler", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/faunerithler/faunerithler.html" },
-        { name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/hvozdlina/hvozdlina.html" },
-        { name: "Lešijky", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/lesijky/lesijky.html" },
-        { name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/monaryn/monaryn_mesto.html" },
+        //{ name: "Dum Karak", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/dum_karak/dum_karak.html" },
+        //{ name: "Faünerithler", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/faunerithler/faunerithler.html" },
+        //{ name: "Hvozdlina", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/hvozdlina/hvozdlina.html" },
+        //{ name: "Lešijky", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/lesijky/lesijky.html" },
+        //{ name: "Monaryn", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/monaryn/monaryn_mesto.html" },
         { name: "Popelgrad", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/popelgrad/popelgrad.html" },
-        { name: "Prachtemir", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/prachtemir/prachtemir.html" },
-        { name: "Praskliny", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/praskliny/praskliny.html" },
-        { name: "Sky Reach", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/sky_reach/sky_reach.html" },
+        //{ name: "Prachtemir", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/prachtemir/prachtemir.html" },
+        //{ name: "Praskliny", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/praskliny/praskliny.html" },
+        //{ name: "Sky Reach", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/sky_reach/sky_reach.html" },
         { name: "Trilldas", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/trilldas/trilldas.html" },
-        { name: "Záhořlice", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/zahorlice/zahorlice.html" },
-        { name: "Zlatohrádek", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/zlatohradek/zlatohradek.html" }
+        //{ name: "Záhořlice", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/zahorlice/zahorlice.html" },
+        //{ name: "Zlatohrádek", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/zlatohradek/zlatohradek.html" }
       ]}
     ]},
     { "Tromin": [
