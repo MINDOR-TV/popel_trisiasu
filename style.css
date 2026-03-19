@@ -173,7 +173,7 @@ main {
 }
 
 .logo {
-  max-width: 60%;                 /* značně menší než dříve */
+  max-width: 40%;                 /* značně menší než dříve */
   height: auto;
   margin: 2rem auto;   
 }
