@@ -221,25 +221,21 @@ const currentUrl = window.location.href;
 const links = menuContainer?.querySelectorAll("a") || [];
 
 links.forEach(link => {
-  const linkUrl = link.href;
-  if (linkUrl === currentUrl) {
-    link.style.color = "#ffcc66";
+  if (link.href === currentUrl) {
+    link.style.color = "#ffcc66"; // samotný odkaz
 
-    // Otevře všechny nadřazené submenu
+    // Otevře jen rodičovská submenu
     let parent = link.parentElement;
     while (parent && parent !== menuContainer) {
       if (parent.classList.contains("submenu")) {
         parent.classList.add("visible");
       }
+      // zvýrazní přímo nadřazenou kategorii u submenu
+      const header = parent.previousElementSibling;
+      if (header && header.classList.contains("menu-category")) {
+        header.style.color = "#ffcc66";
+      }
       parent = parent.parentElement;
-    }
-
-    // Zvýrazní všechny nadřazené kategorie
-    let category = link.closest(".menu-section");
-    if (category) {
-      category.querySelectorAll(".menu-category").forEach(cat => {
-        cat.style.color = "#ffcc66";
-      });
     }
   }
 });
