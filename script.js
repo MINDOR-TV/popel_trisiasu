@@ -74,7 +74,7 @@ const menuData = {
         { name: "Smrčná", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/smrcna/smrcna.html" },
         { name: "Stříbrná Rokle", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/stribrna_rokle/stribrna_rokle.html" },
         { name: "Suchý Pahorek", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/suchy_pahorek/suchy_pahorek.html" },
-        { name: "Trisiaský Trezor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/trisiasky_trezor.html" }
+        { name: "Trisiaský Trezor", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/kralovstvi_severniho_lidu/trisiasky_trezor/trisiasky_trezor.html" }
       ]},
       { "Království Morvallat": [
         { name: "Dûm Karak", url: "https://mindor-tv.github.io/popel_trisiasu/mista/trisias/monarynske_kralovstvi/dum_karak/dum_karak.html" },
