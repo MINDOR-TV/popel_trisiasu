@@ -127,6 +127,16 @@ const menuData = {
     ]},
   ],
   "Dějiny Oblagunu": "https://mindor-tv.github.io/popel_trisiasu/dejiny-oblagunu.html",
+  "Spellbook": [
+    { name: "Bard", url: "https://dnd5e.wikidot.com/spells:bard" },
+    { name: "Cleric", url: "https://dnd5e.wikidot.com/spells:cleric" },
+    { name: "Druid", url: "https://dnd5e.wikidot.com/spells:druid" },
+    { name: "Paladin", url: "https://dnd5e.wikidot.com/spells:paladin" },
+    { name: "Ranger", url: "https://dnd5e.wikidot.com/spells:ranger" },
+    { name: "Sorcerer", url: "https://dnd5e.wikidot.com/spells:sorcerer" },
+    { name: "Warlock", url: "https://dnd5e.wikidot.com/spells:warlock" },
+    { name: "Wizard", url: "https://dnd5e.wikidot.com/spells:wizard" }
+  ],
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
 };
 
