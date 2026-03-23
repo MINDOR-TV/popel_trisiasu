@@ -105,9 +105,9 @@ const menuData = {
     { name: "Jindřich ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/jindrich_ze_mlejna.html" },
     { name: "Marcel", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/marcel.html" },
     { name: "Oren Talld", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/oren_talld.html" },
-    //{ name: "Pavel Perlík", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/pavel_perlik.html" },
+    { name: "Pavel Perlík", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/pavel_perlik.html" },
     { name: "Plea", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/plea.html" },
-    //{ name: "Slim", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/slim_sarajev.html" },
+    { name: "Sarajev Slim", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/sarajev_slim.html" },
     { name: "Starosta Velebníček", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/starosta_velebnicek.html" },
     { name: "Štěpán", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/stepan.html" },
     { name: "Vaelor Minstrell", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/vaelor_minstrell.html" }
