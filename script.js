@@ -216,7 +216,7 @@ Object.keys(menuData).forEach(category => {
   header.classList.add("menu-category");
   section.appendChild(header);
 
-  const submenu = createSubmenu(value);
+  const submenu = createSubmenu(value, category);
 
   header.addEventListener("click", () => {
     submenu.classList.toggle("visible");
