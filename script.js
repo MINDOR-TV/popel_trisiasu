@@ -145,16 +145,22 @@ const menuContainer = document.getElementById("side-menu");
 const toggleBtn = document.getElementById("menu-toggle");
 
 if (menuContainer && toggleBtn) {
-  function createSubmenu(items) {
+  function createSubmenu(items, parentCategory) {
   const submenu = document.createElement("div");
   submenu.classList.add("submenu");
 
   items.forEach(item => {
-    if (typeof item === "string") {
+    if (item.url) {
       // jednoduchý odkaz
       const link = document.createElement("a");
-      link.textContent = item;
-      link.href = item;
+      link.textContent = item.name;
+      link.href = item.url;
+
+      if (parentCategory === "Spellbook") {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+      
       submenu.appendChild(link);
     } 
     else if (item.url) {
