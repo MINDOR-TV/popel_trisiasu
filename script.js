@@ -140,6 +140,26 @@ const menuData = {
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
 };
 
+// --- Přidání externího odkazu do levého menu ---
+(function addExternalLink() {
+  const menuContainer = document.getElementById("side-menu");
+  if (!menuContainer) return;
+
+  const section = document.createElement("div");
+  section.classList.add("menu-section");
+
+  const link = document.createElement("a");
+  link.textContent = "Oblagun"; // název odkazu
+  link.href = "https://mindor-tv.github.io/oblagun/index.html"; // URL odkazu
+  link.target = "_blank"; // otevřít v novém okně
+  link.rel = "noopener noreferrer"; 
+
+  link.classList.add("menu-category", "direct-link"); // stejný styl jako ostatní
+
+  section.appendChild(link);
+  menuContainer.appendChild(section);
+})();
+
 // === LEVÉ MENU ===
 const menuContainer = document.getElementById("side-menu");
 const toggleBtn = document.getElementById("menu-toggle");
