@@ -217,30 +217,23 @@ if (menuContainer && toggleBtn) {
   const menuContainer = document.getElementById("side-menu");
   if (!menuContainer) return;
 
-  // Nastavíme menu jako flex sloupec s výškou viewportu
   menuContainer.style.display = "flex";
   menuContainer.style.flexDirection = "column";
-  menuContainer.style.height = window.innerHeight + "px"; // výška viewportu
-  menuContainer.style.overflowY = "auto"; // aby šel scrollovat, když je menu dlouhé
+  menuContainer.style.overflowY = "auto";
 
   const section = document.createElement("div");
   section.classList.add("menu-section");
-  section.style.marginTop = "auto"; // tlačí tuto sekci úplně dolů
+  section.style.marginTop = "auto";
 
   const link = document.createElement("a");
-  link.textContent = "Oblagun"; 
-  link.href = "https://mindor-tv.github.io/oblagun/index.html"; 
-  link.target = "_blank"; 
-  link.rel = "noopener noreferrer"; 
-  link.classList.add("menu-category", "direct-link"); 
+  link.textContent = "Oblagun";
+  link.href = "https://mindor-tv.github.io/oblagun/index.html";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.classList.add("menu-category", "direct-link");
 
   section.appendChild(link);
   menuContainer.appendChild(section);
-
-  // Dynamicky přizpůsobíme výšku při resize okna
-  window.addEventListener("resize", () => {
-    menuContainer.style.height = window.innerHeight + "px";
-  });
 })();
 
   toggleBtn.addEventListener("click", () => {
