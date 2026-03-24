@@ -18,6 +18,7 @@
   createIcon("shortcut icon");
   createIcon("apple-touch-icon");
 })();
+
 // === FAVICON ===
 (function setFavicon(url) {
   const head = document.head;
@@ -140,143 +141,92 @@ const menuData = {
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
 };
 
-// Přidej až po generování menu
-Object.keys(menuData).forEach(category => {
-  const section = document.createElement("div");
-  section.classList.add("menu-section");
-
-  const value = menuData[category];
-
-  if (typeof value === "string") {
-    const link = document.createElement("a");
-    link.textContent = category;
-    link.href = value;
-    link.classList.add("menu-category", "direct-link");
-    section.appendChild(link);
-    menuContainer.appendChild(section);
-    return;
-  }
-
-  const header = document.createElement("div");
-  header.textContent = category;
-  header.classList.add("menu-category");
-  section.appendChild(header);
-
-  const submenu = createSubmenu(value, category);
-
-  header.addEventListener("click", () => {
-    submenu.classList.toggle("visible");
-  });
-
-  section.appendChild(submenu);
-  menuContainer.appendChild(section);
-});
-
-// --- Přidání externího odkazu na konec ---
-(function addExternalLink() {
-  const menuContainer = document.getElementById("side-menu");
-  if (!menuContainer) return;
-
-  const section = document.createElement("div");
-  section.classList.add("menu-section");
-
-  const link = document.createElement("a");
-  link.textContent = "Oblagun"; 
-  link.href = "https://mindor-tv.github.io/oblagun/index.html"; 
-  link.target = "_blank"; 
-  link.rel = "noopener noreferrer"; 
-  link.classList.add("menu-category", "direct-link"); 
-
-  section.appendChild(link);
-  menuContainer.appendChild(section); // teď bude opravdu dole
-})();
-
 // === LEVÉ MENU ===
 const menuContainer = document.getElementById("side-menu");
 const toggleBtn = document.getElementById("menu-toggle");
 
 if (menuContainer && toggleBtn) {
+
   function createSubmenu(items, parentCategory) {
-  const submenu = document.createElement("div");
-  submenu.classList.add("submenu");
+    const submenu = document.createElement("div");
+    submenu.classList.add("submenu");
 
-  items.forEach(item => {
-    if (item.url) {
-      // jednoduchý odkaz
-      const link = document.createElement("a");
-      link.textContent = item.name;
-      link.href = item.url;
+    items.forEach(item => {
+      if (item.url) {
+        const link = document.createElement("a");
+        link.textContent = item.name;
+        link.href = item.url;
 
-      if (parentCategory === "Spellbook") {
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
+        if (parentCategory === "Spellbook") {
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+        }
+
+        submenu.appendChild(link);
+      } else if (typeof item === "object") {
+        const key = Object.keys(item)[0];
+        const nestedHeader = document.createElement("div");
+        nestedHeader.textContent = key;
+        nestedHeader.classList.add("menu-category", "nested-category");
+
+        const nestedSubmenu = createSubmenu(item[key]);
+        nestedHeader.addEventListener("click", () => {
+          nestedSubmenu.classList.toggle("visible");
+        });
+
+        submenu.appendChild(nestedHeader);
+        submenu.appendChild(nestedSubmenu);
       }
-      
-      submenu.appendChild(link);
-    } 
-    else if (item.url) {
-      // klasický odkaz
+    });
+
+    return submenu;
+  }
+
+  Object.keys(menuData).forEach(category => {
+    const section = document.createElement("div");
+    section.classList.add("menu-section");
+
+    const value = menuData[category];
+
+    if (typeof value === "string") {
       const link = document.createElement("a");
-      link.textContent = item.name;
-      link.href = item.url;
-      submenu.appendChild(link);
-    } 
-    else if (typeof item === "object") {
-      // vnořená sekce (např. Vyšší Pantheon)
-      const key = Object.keys(item)[0];
-
-      const nestedHeader = document.createElement("div");
-      nestedHeader.textContent = key;
-      nestedHeader.classList.add("menu-category", "nested-category");
-
-      const nestedSubmenu = createSubmenu(item[key]);
-
-      nestedHeader.addEventListener("click", () => {
-        nestedSubmenu.classList.toggle("visible");
-      });
-
-      submenu.appendChild(nestedHeader);
-      submenu.appendChild(nestedSubmenu);
+      link.textContent = category;
+      link.href = value;
+      link.classList.add("menu-category", "direct-link");
+      section.appendChild(link);
+      menuContainer.appendChild(section);
+      return;
     }
+
+    const header = document.createElement("div");
+    header.textContent = category;
+    header.classList.add("menu-category");
+    section.appendChild(header);
+
+    const submenu = createSubmenu(value, category);
+    header.addEventListener("click", () => {
+      submenu.classList.toggle("visible");
+    });
+
+    section.appendChild(submenu);
+    menuContainer.appendChild(section);
   });
 
-  return submenu;
-}
+  // --- Přidání externího odkazu na konec ---
+  (function addExternalLink() {
+    const section = document.createElement("div");
+    section.classList.add("menu-section");
 
-Object.keys(menuData).forEach(category => {
-  const section = document.createElement("div");
-  section.classList.add("menu-section");
-
-  const value = menuData[category];
-
-  // === 1) Kategorie je PŘÍMÝ ODKAZ ===
-  if (typeof value === "string") {
     const link = document.createElement("a");
-    link.textContent = category;
-    link.href = value;
-    link.classList.add("menu-category", "direct-link");
+    link.textContent = "Oblagun"; 
+    link.href = "https://mindor-tv.github.io/oblagun/index.html"; 
+    link.target = "_blank"; 
+    link.rel = "noopener noreferrer"; 
+    link.classList.add("menu-category", "direct-link"); 
 
     section.appendChild(link);
     menuContainer.appendChild(section);
-    return;
-  }
-
-  // === 2) Kategorie má submenu ===
-  const header = document.createElement("div");
-  header.textContent = category;
-  header.classList.add("menu-category");
-  section.appendChild(header);
-
-  const submenu = createSubmenu(value, category);
-
-  header.addEventListener("click", () => {
-    submenu.classList.toggle("visible");
-  });
-
-  section.appendChild(submenu);
-  menuContainer.appendChild(section);
-});
-
+  })();
 
   toggleBtn.addEventListener("click", () => {
     menuContainer.classList.toggle("visible");
@@ -289,19 +239,12 @@ const links = menuContainer?.querySelectorAll("a") || [];
 
 links.forEach(link => {
   if (link.href === currentUrl) {
-    link.style.color = "#ffcc66"; // samotný odkaz
-
-    // Otevře jen rodičovská submenu
+    link.style.color = "#ffcc66";
     let parent = link.parentElement;
     while (parent && parent !== menuContainer) {
-      if (parent.classList.contains("submenu")) {
-        parent.classList.add("visible");
-      }
-      // zvýrazní přímo nadřazenou kategorii u submenu
+      if (parent.classList.contains("submenu")) parent.classList.add("visible");
       const header = parent.previousElementSibling;
-      if (header && header.classList.contains("menu-category")) {
-        header.style.color = "#ffcc66";
-      }
+      if (header && header.classList.contains("menu-category")) header.style.color = "#ffcc66";
       parent = parent.parentElement;
     }
   }
@@ -371,70 +314,6 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') nextBtn.click();
   if (e.key === 'ArrowLeft') prevBtn.click();
 });
-
-// === MAPOVÝ ZOOM LENS (přiblížené okénko na mapě) ===
-(function () {
-  const img = document.getElementById('map');
-  const lens = document.getElementById('map-lens');
-  if (!img || !lens) return; // nejsme na mapové stránce
-
-  const zoom = 2; // jak moc přiblížit (klidně změň na 2.5 / 3)
-
-  function setupBackground() {
-    const w = img.clientWidth;
-    const h = img.clientHeight;
-    lens.style.backgroundImage = `url('${img.src}')`;
-    lens.style.backgroundSize = w * zoom + 'px ' + h * zoom + 'px';
-  }
-
-  if (img.complete) {
-    setupBackground();
-  } else {
-    img.addEventListener('load', setupBackground);
-  }
-
-  function getCursorPos(e) {
-    const rect = img.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    return { x, y };
-  }
-
-  function moveLens(e) {
-    e.preventDefault();
-    const pos = getCursorPos(e);
-
-    let x = pos.x - lens.offsetWidth / 2;
-    let y = pos.y - lens.offsetHeight / 2;
-
-    const maxX = img.clientWidth - lens.offsetWidth;
-    const maxY = img.clientHeight - lens.offsetHeight;
-
-    if (x < 0) x = 0;
-    if (y < 0) y = 0;
-    if (x > maxX) x = maxX;
-    if (y > maxY) y = maxY;
-
-    lens.style.left = x + 'px';
-    lens.style.top = y + 'px';
-
-    const bgX = -x * zoom;
-    const bgY = -y * zoom;
-    lens.style.backgroundPosition = bgX + 'px ' + bgY + 'px';
-  }
-
-  img.addEventListener('mouseenter', () => {
-    lens.style.display = 'block';
-  });
-
-  img.addEventListener('mouseleave', () => {
-    lens.style.display = 'none';
-  });
-
-  img.addEventListener('mousemove', moveLens);
-  lens.addEventListener('mousemove', moveLens);
-})();
-
 
 
 
