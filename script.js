@@ -140,7 +140,10 @@ const menuData = {
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
 };
 
-// --- Přidání externího odkazu do levého menu ---
+// Přidej až po generování menu
+Object.keys(menuData).forEach(...); // tvůj stávající kód generování menu
+
+// --- Přidání externího odkazu na konec ---
 (function addExternalLink() {
   const menuContainer = document.getElementById("side-menu");
   if (!menuContainer) return;
@@ -149,15 +152,14 @@ const menuData = {
   section.classList.add("menu-section");
 
   const link = document.createElement("a");
-  link.textContent = "Oblagun"; // název odkazu
-  link.href = "https://mindor-tv.github.io/oblagun/index.html"; // URL odkazu
-  link.target = "_blank"; // otevřít v novém okně
+  link.textContent = "Oblagun"; 
+  link.href = "https://mindor-tv.github.io/oblagun/index.html"; 
+  link.target = "_blank"; 
   link.rel = "noopener noreferrer"; 
-
-  link.classList.add("menu-category", "direct-link"); // stejný styl jako ostatní
+  link.classList.add("menu-category", "direct-link"); 
 
   section.appendChild(link);
-  menuContainer.appendChild(section);
+  menuContainer.appendChild(section); // teď bude opravdu dole
 })();
 
 // === LEVÉ MENU ===
