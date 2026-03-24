@@ -141,7 +141,36 @@ const menuData = {
 };
 
 // Přidej až po generování menu
-Object.keys(menuData).forEach(...); // tvůj stávající kód generování menu
+Object.keys(menuData).forEach(category => {
+  const section = document.createElement("div");
+  section.classList.add("menu-section");
+
+  const value = menuData[category];
+
+  if (typeof value === "string") {
+    const link = document.createElement("a");
+    link.textContent = category;
+    link.href = value;
+    link.classList.add("menu-category", "direct-link");
+    section.appendChild(link);
+    menuContainer.appendChild(section);
+    return;
+  }
+
+  const header = document.createElement("div");
+  header.textContent = category;
+  header.classList.add("menu-category");
+  section.appendChild(header);
+
+  const submenu = createSubmenu(value, category);
+
+  header.addEventListener("click", () => {
+    submenu.classList.toggle("visible");
+  });
+
+  section.appendChild(submenu);
+  menuContainer.appendChild(section);
+});
 
 // --- Přidání externího odkazu na konec ---
 (function addExternalLink() {
