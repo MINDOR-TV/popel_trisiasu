@@ -211,22 +211,26 @@ if (menuContainer && toggleBtn) {
     section.appendChild(submenu);
     menuContainer.appendChild(section);
   });
+  
+  // --- Přidání externího odkazu na konec na úplný spodok ---
+(function addExternalLink() {
+  const menuContainer = document.getElementById("side-menu");
+  if (!menuContainer) return;
 
-  // --- Přidání externího odkazu na konec ---
-  (function addExternalLink() {
-    const section = document.createElement("div");
-    section.classList.add("menu-section");
+  const section = document.createElement("div");
+  section.classList.add("menu-section");
+  section.style.marginTop = "auto"; // vytlačí sekci úplně dolů
 
-    const link = document.createElement("a");
-    link.textContent = "Oblagun"; 
-    link.href = "https://mindor-tv.github.io/oblagun/index.html"; 
-    link.target = "_blank"; 
-    link.rel = "noopener noreferrer"; 
-    link.classList.add("menu-category", "direct-link"); 
+  const link = document.createElement("a");
+  link.textContent = "Oblagun"; 
+  link.href = "https://mindor-tv.github.io/oblagun/index.html"; 
+  link.target = "_blank"; 
+  link.rel = "noopener noreferrer"; 
+  link.classList.add("menu-category", "direct-link"); 
 
-    section.appendChild(link);
-    menuContainer.appendChild(section);
-  })();
+  section.appendChild(link);
+  menuContainer.appendChild(section);
+})();
 
   toggleBtn.addEventListener("click", () => {
     menuContainer.classList.toggle("visible");
