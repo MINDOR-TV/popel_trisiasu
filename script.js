@@ -212,14 +212,20 @@ if (menuContainer && toggleBtn) {
     menuContainer.appendChild(section);
   });
   
-  // --- Přidání externího odkazu na konec na úplný spodok ---
+ // --- Přidání externího odkazu na úplný spodok levého slideru ---
 (function addExternalLink() {
   const menuContainer = document.getElementById("side-menu");
   if (!menuContainer) return;
 
+  // Udělat menu flex boxem
+  menuContainer.style.display = "flex";
+  menuContainer.style.flexDirection = "column";
+  menuContainer.style.height = "100%"; // musí mít výšku slideru
+  menuContainer.style.justifyContent = "flex-start"; // ostatní zůstane nahoře
+
   const section = document.createElement("div");
   section.classList.add("menu-section");
-  section.style.marginTop = "auto"; // vytlačí sekci úplně dolů
+  section.style.marginTop = "auto"; // vytlačí tuto sekci úplně dolů
 
   const link = document.createElement("a");
   link.textContent = "Oblagun"; 
