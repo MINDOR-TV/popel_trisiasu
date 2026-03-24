@@ -228,8 +228,6 @@ if (menuContainer && toggleBtn) {
   const link = document.createElement("a");
   link.textContent = "Oblagun";
   link.href = "https://mindor-tv.github.io/oblagun/index.html";
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
   link.classList.add("menu-category", "direct-link");
 
   section.appendChild(link);
