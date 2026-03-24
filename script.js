@@ -212,20 +212,20 @@ if (menuContainer && toggleBtn) {
     menuContainer.appendChild(section);
   });
   
- // --- Přidání externího odkazu na úplný spodok levého slideru ---
+ // --- Přidání externího odkazu úplně dolů levého slideru ---
 (function addExternalLink() {
   const menuContainer = document.getElementById("side-menu");
   if (!menuContainer) return;
 
-  // Udělat menu flex boxem
+  // Nastavíme menu jako flex sloupec s výškou viewportu
   menuContainer.style.display = "flex";
   menuContainer.style.flexDirection = "column";
-  menuContainer.style.height = "100%"; // musí mít výšku slideru
-  menuContainer.style.justifyContent = "flex-start"; // ostatní zůstane nahoře
+  menuContainer.style.height = window.innerHeight + "px"; // výška viewportu
+  menuContainer.style.overflowY = "auto"; // aby šel scrollovat, když je menu dlouhé
 
   const section = document.createElement("div");
   section.classList.add("menu-section");
-  section.style.marginTop = "auto"; // vytlačí tuto sekci úplně dolů
+  section.style.marginTop = "auto"; // tlačí tuto sekci úplně dolů
 
   const link = document.createElement("a");
   link.textContent = "Oblagun"; 
@@ -236,6 +236,11 @@ if (menuContainer && toggleBtn) {
 
   section.appendChild(link);
   menuContainer.appendChild(section);
+
+  // Dynamicky přizpůsobíme výšku při resize okna
+  window.addEventListener("resize", () => {
+    menuContainer.style.height = window.innerHeight + "px";
+  });
 })();
 
   toggleBtn.addEventListener("click", () => {
