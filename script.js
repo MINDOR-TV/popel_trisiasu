@@ -104,7 +104,7 @@ const menuData = {
     { name: "Eliška ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/eliska_ze_mlejna.html" },
     { name: "Folken", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/folken.html" },
     { name: "Jindřich ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/jindrich_ze_mlejna.html" },
-    { name: "Kalstein Školastyk", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/skolastyk.html" },
+    { name: "Kalkstein Školastyk", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/skolastyk.html" },
     { name: "Marcel", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/marcel.html" },
     { name: "Oren Talld", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/oren_talld.html" },
     { name: "Pavel Perlík", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/pavel_perlik.html" },
