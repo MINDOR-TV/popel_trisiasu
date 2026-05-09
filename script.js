@@ -142,6 +142,147 @@ const menuData = {
   "Cheatsheet": "https://mindor-tv.github.io/popel_trisiasu/cheatsheet.html"
 };
 
+const homePopupData = {
+  druzina: {
+    title: "Družina",
+    items: [
+      { name: "Aeriel", url: "postavy/aeriel/character.html", banner: "assets/home-banners/aeriel.png" },
+      { name: "Bogdan", url: "postavy/bogdan/character.html", banner: "assets/home-banners/bogdan.png" },
+      { name: "Celeana Dawnshield", url: "postavy/celeana/character.html", banner: "assets/home-banners/celeana.png" },
+      { name: "Ofélie", url: "postavy/ofelie/character.html", banner: "assets/home-banners/ofelie.png" },
+      { name: "Thalor", url: "postavy/thalor/character.html", banner: "assets/home-banners/thalor.png" }
+    ]
+  },
+  mapy: {
+    title: "Mapy",
+    items: [
+      { name: "Oblagun", url: "mapy/oblagun.html" },
+      { name: "Trisias", url: "mapy/trisias.html" }
+    ]
+  },
+  mista: {
+    title: "Místa",
+    groups: [
+      {
+        title: "Trisias",
+        groups: [
+          {
+            title: "Království Allveir",
+            items: [
+              { name: "Averindor", url: "mista/trisias/kralovstvi_severniho_lidu/averindor/averindor.html" },
+              { name: "Černé Hory", url: "mista/trisias/kralovstvi_severniho_lidu/cerne_hory/cerne_hory.html" },
+              { name: "Horní Krupá", url: "mista/trisias/kralovstvi_severniho_lidu/horni_krupa/horni_krupa.html" },
+              { name: "Kamenolec", url: "mista/trisias/kralovstvi_severniho_lidu/kamenolec/kamenolec.html" },
+              { name: "Ostrokolí", url: "mista/trisias/kralovstvi_severniho_lidu/ostrokoli/ostrokoli.html" },
+              { name: "Prachovice", url: "mista/trisias/kralovstvi_severniho_lidu/prachovice/prachovice.html" },
+              { name: "Smrčná", url: "mista/trisias/kralovstvi_severniho_lidu/smrcna/smrcna.html" },
+              { name: "Stříbrná Rokle", url: "mista/trisias/kralovstvi_severniho_lidu/stribrna_rokle/stribrna_rokle.html" },
+              { name: "Suchý Pahorek", url: "mista/trisias/kralovstvi_severniho_lidu/suchy_pahorek/suchy_pahorek.html" },
+              { name: "Trisiaský Trezor", url: "mista/trisias/kralovstvi_severniho_lidu/trisiasky_trezor/trisiasky_trezor.html" }
+            ]
+          },
+          {
+            title: "Království Morvallat",
+            items: [
+              { name: "Dům Karak", url: "mista/trisias/monarynske_kralovstvi/dum_karak/dum_karak.html" },
+              { name: "Faünerithler", url: "mista/trisias/monarynske_kralovstvi/faunerithler/faunerithler.html" },
+              { name: "Hvozdlina", url: "mista/trisias/monarynske_kralovstvi/hvozdlina/hvozdlina.html" },
+              { name: "Lešijky", url: "mista/trisias/monarynske_kralovstvi/lesijky/lesijky.html" },
+              { name: "Monaryn", url: "mista/trisias/monarynske_kralovstvi/monaryn/monaryn_mesto.html" },
+              { name: "Popelgrad", url: "mista/trisias/monarynske_kralovstvi/popelgrad/popelgrad.html" },
+              { name: "Prachtemir", url: "mista/trisias/monarynske_kralovstvi/prachtemir/prachtemir.html" },
+              { name: "Praskliny", url: "mista/trisias/monarynske_kralovstvi/praskliny/praskliny.html" },
+              { name: "Sky Reach", url: "mista/trisias/monarynske_kralovstvi/sky_reach/sky_reach.html" },
+              { name: "Trilldas", url: "mista/trisias/monarynske_kralovstvi/trilldas/trilldas.html" },
+              { name: "Záhořlice", url: "mista/trisias/monarynske_kralovstvi/zahorlice/zahorlice.html" },
+              { name: "Zlatohrádek", url: "mista/trisias/monarynske_kralovstvi/zlatohradek/zlatohradek.html" }
+            ]
+          }
+        ]
+      },
+      {
+        title: "Gunnerovy ostrovy",
+        hidden: true,
+        groups: []
+      },
+      {
+        title: "Mazerin",
+        hidden: true,
+        groups: []
+      },
+      {
+        title: "Tromin",
+        hidden: true,
+        groups: []
+      }
+    ]
+  },
+  npc: {
+    title: "NPC",
+    items: [
+      { name: "Ariana Dawnshield", url: "NPC/ariana_minstrell.html" },
+      { name: "Aurora Dawnshield", url: "NPC/aurora.html" },
+      { name: "Benjamin Dawnshield", url: "NPC/benjamin.html" },
+      { name: "Chaol Dawnshield", url: "NPC/chaol.html" },
+      { name: "Dudo", url: "NPC/dudo.html" },
+      { name: "Eliška ze mlejna", url: "NPC/eliska_ze_mlejna.html" },
+      { name: "Folken", url: "NPC/folken.html" },
+      { name: "Jindřich ze mlejna", url: "NPC/jindrich_ze_mlejna.html" },
+      { name: "Kalkstein Školastyk", url: "NPC/skolastyk.html" },
+      { name: "Marcel", url: "NPC/marcel.html" },
+      { name: "Oren Talld", url: "NPC/oren_talld.html" },
+      { name: "Pavel Perlík", url: "NPC/pavel_perlik.html" },
+      { name: "Plea", url: "NPC/plea.html" },
+      { name: "Sarajev Slim", url: "NPC/sarajev_slim.html" },
+      { name: "Starosta Velebníček", url: "NPC/starosta_velebnicek.html" },
+      { name: "Štěpán", url: "NPC/stepan.html" },
+      { name: "Vaelor Minstrell", url: "NPC/vaelor_minstrell.html" }
+    ]
+  },
+  bozstvo: {
+    title: "Božstvo",
+    groups: [
+      {
+        title: "Přehled",
+        items: [
+          { name: "Celkový přehled bohů", url: "bohove/bohove.html" }
+        ]
+      },
+      {
+        title: "Vyšší Pantheon",
+        items: [
+          { name: "Marlůvar", url: "bohove/marluvar.html" },
+          { name: "Ilnur", url: "bohove/ilnur.html" },
+          { name: "Glordi", url: "bohove/glordi.html" },
+          { name: "Malté", url: "bohove/malte.html" },
+          { name: "Monaryn", url: "bohove/monaryn.html" },
+          { name: "Tórlien", url: "bohove/torlien.html" }
+        ]
+      },
+      {
+        title: "Nižší Pantheon",
+        items: [
+          { name: "Mondyl", url: "bohove/nizsi_bohove/mondyl/mondyl.html" }
+        ]
+      }
+    ]
+  },
+  spellbook: {
+    title: "Spellbook",
+    external: true,
+    items: [
+      { name: "Bard", url: "https://dnd5e.wikidot.com/spells:bard" },
+      { name: "Cleric", url: "https://dnd5e.wikidot.com/spells:cleric" },
+      { name: "Druid", url: "https://dnd5e.wikidot.com/spells:druid" },
+      { name: "Paladin", url: "https://dnd5e.wikidot.com/spells:paladin" },
+      { name: "Ranger", url: "https://dnd5e.wikidot.com/spells:ranger" },
+      { name: "Sorcerer", url: "https://dnd5e.wikidot.com/spells:sorcerer" },
+      { name: "Warlock", url: "https://dnd5e.wikidot.com/spells:warlock" },
+      { name: "Wizard", url: "https://dnd5e.wikidot.com/spells:wizard" }
+    ]
+  }
+};
+
 // === LEVÉ MENU ===
 const menuContainer = document.getElementById("side-menu");
 const toggleBtn = document.getElementById("menu-toggle");
@@ -284,45 +425,159 @@ const prevBtn = document.querySelector('.prev');
 
 let currentIndex = 0;
 
-images.forEach((img, index) => {
-  img.addEventListener('click', () => {
-    currentIndex = index;
-    showImage();
-    lightbox.style.display = 'flex';
+if (lightbox && lightboxImg && lightboxCaption) {
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      showImage();
+      lightbox.style.display = 'flex';
+    });
   });
-});
+}
 
 function showImage() {
   const img = images[currentIndex];
+  if (!img || !lightboxImg || !lightboxCaption) return;
   lightboxImg.src = img.src;
   lightboxCaption.textContent = img.getAttribute('data-caption') || '';
 }
 
-nextBtn.addEventListener('click', () => {
+nextBtn?.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % images.length;
   showImage();
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn?.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   showImage();
 });
 
-closeBtn.addEventListener('click', () => {
+closeBtn?.addEventListener('click', () => {
   lightbox.style.display = 'none';
 });
 
-lightbox.addEventListener('click', (e) => {
+lightbox?.addEventListener('click', (e) => {
   if (e.target === lightbox) lightbox.style.display = 'none';
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') lightbox.style.display = 'none';
-  if (e.key === 'ArrowRight') nextBtn.click();
-  if (e.key === 'ArrowLeft') prevBtn.click();
+  if (e.key === 'Escape') {
+    if (lightbox) lightbox.style.display = 'none';
+    closeHomePopup();
+  }
+  if (e.key === 'ArrowRight') nextBtn?.click();
+  if (e.key === 'ArrowLeft') prevBtn?.click();
 });
 
+// === ÚVODNÍ POPUP KARTY ===
+const homePopup = document.getElementById("home-popup");
+const homePopupTitle = homePopup?.querySelector(".home-popup__title");
+const homePopupContent = homePopup?.querySelector(".home-popup__content");
+const homePopupClose = homePopup?.querySelector(".home-popup__close");
+const homeCards = document.querySelectorAll("[data-home-popup]");
 
+function createHomeLink(item, external = false) {
+  const link = document.createElement("a");
+  link.className = "home-popup__link";
+  link.href = item.url;
+  link.textContent = item.name;
 
+  if (item.banner) {
+    link.classList.add("home-popup__link--banner");
+    link.style.backgroundImage = `linear-gradient(90deg, rgba(0,0,0,0.78), rgba(0,0,0,0.25)), url("${item.banner}")`;
+  }
 
+  if (external || item.url.startsWith("http")) {
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  }
 
+  return link;
+}
+
+function renderHomeGroup(group, external = false, level = 0) {
+  if (group.hidden) return null;
+
+  const groupEl = document.createElement("section");
+  groupEl.className = "home-popup__group";
+  if (level > 0) groupEl.classList.add("home-popup__group--nested");
+
+  const hasChildren = Boolean(group.items?.length || group.groups?.length);
+  const isCollapsible = hasChildren;
+  const contentEl = document.createElement("div");
+  contentEl.className = "home-popup__group-content";
+
+  if (isCollapsible) {
+    groupEl.classList.add("is-collapsed");
+
+    const heading = document.createElement("button");
+    heading.type = "button";
+    heading.className = "home-popup__group-toggle";
+    heading.textContent = group.title;
+    heading.setAttribute("aria-expanded", "false");
+
+    heading.addEventListener("click", () => {
+      const isOpen = groupEl.classList.toggle("is-collapsed") === false;
+      heading.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    groupEl.appendChild(heading);
+  } else {
+    const heading = document.createElement(level === 0 ? "h3" : "h4");
+    heading.textContent = group.title;
+    groupEl.appendChild(heading);
+  }
+
+  group.items?.forEach(item => {
+    contentEl.appendChild(createHomeLink(item, external));
+  });
+
+  group.groups?.forEach(childGroup => {
+    const childEl = renderHomeGroup(childGroup, external, level + 1);
+    if (childEl) contentEl.appendChild(childEl);
+  });
+
+  if (hasChildren) groupEl.appendChild(contentEl);
+
+  return groupEl;
+}
+
+function closeHomePopup() {
+  if (!homePopup) return;
+  homePopup.classList.remove("visible");
+  homePopup.setAttribute("aria-hidden", "true");
+}
+
+function openHomePopup(key) {
+  const data = homePopupData[key];
+  if (!data || !homePopup || !homePopupTitle || !homePopupContent) return;
+
+  homePopupTitle.textContent = data.title;
+  homePopupContent.innerHTML = "";
+
+  if (data.groups) {
+    data.groups.forEach(group => {
+      const groupEl = renderHomeGroup(group, data.external);
+      if (groupEl) homePopupContent.appendChild(groupEl);
+    });
+  } else {
+    data.items.forEach(item => {
+      homePopupContent.appendChild(createHomeLink(item, data.external));
+    });
+  }
+
+  homePopup.classList.add("visible");
+  homePopup.setAttribute("aria-hidden", "false");
+}
+
+homeCards.forEach(card => {
+  card.addEventListener("click", () => {
+    openHomePopup(card.dataset.homePopup);
+  });
+});
+
+homePopupClose?.addEventListener("click", closeHomePopup);
+
+homePopup?.addEventListener("click", (e) => {
+  if (e.target === homePopup) closeHomePopup();
+});
