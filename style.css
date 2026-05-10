@@ -1215,18 +1215,28 @@ body:not(:has(.character-slider)) .character-page {
   font-size: 1.12rem;
 }
 
-.adventure h4 + p {
+.adventure p {
   margin: -0.95rem 0 0;
   padding: 1rem;
   border: 1px solid rgba(255, 204, 102, 0.16);
   border-top: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0;
   background: rgba(16, 16, 16, 0.24);
   line-height: 1.7;
 }
 
 .adventure h4:has(+ p) {
   border-radius: 10px 10px 0 0;
+}
+
+.adventure p + p {
+  margin-top: -0.95rem;
+  padding-top: 0;
+}
+
+.adventure p:has(+ h4),
+.adventure p:last-child {
+  border-radius: 0 0 10px 10px;
 }
 
 .character-slider {
@@ -1323,8 +1333,12 @@ body:not(:has(.character-slider)) .character-page {
     padding: 0.8rem 0.9rem;
   }
 
-  .adventure h4 + p {
+  .adventure p {
     padding: 0.9rem;
+  }
+
+  .adventure p + p {
+    padding-top: 0;
   }
 }
 
