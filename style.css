@@ -1037,6 +1037,292 @@ main {
   }
 }
 
+/* ===== GLOBALNI SJEDNOCENI PODSTRANEK ===== */
+:root {
+  --zp-gold: #ffcc66;
+  --zp-gold-soft: #ffdd8a;
+  --zp-panel: rgba(43, 43, 43, 0.44);
+  --zp-panel-strong: rgba(20, 20, 20, 0.34);
+  --zp-border: rgba(255, 204, 102, 0.24);
+  --zp-border-strong: rgba(255, 204, 102, 0.45);
+  --zp-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+}
+
+header {
+  border-bottom: 1px solid rgba(255, 204, 102, 0.2);
+  background:
+    linear-gradient(180deg, rgba(49, 49, 49, 0.96), rgba(32, 32, 32, 0.96));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+.header-title {
+  max-width: calc(100% - 7rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: clamp(1.55rem, 3.5vw, 2.6rem);
+  color: var(--zp-gold);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.72);
+}
+
+.menu-button,
+.images-button {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 204, 102, 0.28);
+  border-radius: 10px;
+  background: rgba(20, 20, 20, 0.3);
+  color: #eee;
+  line-height: 1;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.menu-button:hover,
+.images-button:hover,
+.menu-button:focus-visible,
+.images-button:focus-visible {
+  color: var(--zp-gold);
+  border-color: rgba(255, 204, 102, 0.75);
+  background: rgba(255, 204, 102, 0.1);
+  outline: none;
+}
+
+.menu {
+  border-right: 1px solid rgba(255, 204, 102, 0.2);
+  background:
+    linear-gradient(180deg, rgba(49, 49, 49, 0.96), rgba(24, 24, 24, 0.96));
+  box-shadow: 16px 0 34px rgba(0, 0, 0, 0.36);
+}
+
+.menu a,
+.menu-category,
+.submenu .nested-category {
+  border-radius: 8px;
+}
+
+.menu a:hover,
+.menu-category:hover,
+.submenu .nested-category:hover {
+  color: var(--zp-gold);
+}
+
+.content {
+  width: min(980px, calc(100% - 48px));
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 92px 0 2rem;
+}
+
+.content__section,
+.panel,
+.character-container,
+.map-container {
+  border: 1px solid var(--zp-border);
+  background:
+    linear-gradient(145deg, rgba(255, 204, 102, 0.08), rgba(20, 20, 20, 0.25)),
+    var(--zp-panel);
+  backdrop-filter: blur(3px);
+  box-shadow: var(--zp-shadow);
+}
+
+.content__section,
+.panel {
+  padding: clamp(1.1rem, 2.4vw, 1.8rem);
+  border-radius: 12px;
+}
+
+.content__section h2,
+.content__section h3,
+.panel h2,
+.panel h3 {
+  color: var(--zp-gold);
+}
+
+.content__section p,
+.content__section li,
+.panel p,
+.panel li {
+  line-height: 1.72;
+}
+
+.character-page {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 92px 344px 2rem 0;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+body:not(:has(.character-slider)) .character-page {
+  padding-right: 0;
+}
+
+.character-container {
+  width: 100%;
+  max-width: 920px;
+  padding: clamp(1.25rem, 3vw, 2.4rem);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.character-container h2.character-name,
+.character-name {
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--zp-border);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--zp-gold);
+  text-align: left;
+}
+
+.character-description,
+.character-container > p {
+  margin: 0 0 1.3rem;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #eee;
+  text-align: left;
+  line-height: 1.72;
+}
+
+.adventures-title {
+  margin: 2rem 0 1rem;
+  color: var(--zp-gold);
+  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+  text-align: left;
+}
+
+.adventure {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.adventure h4 {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+  border-radius: 10px;
+  background:
+    linear-gradient(90deg, rgba(255, 204, 102, 0.12), rgba(20, 20, 20, 0.22)),
+    rgba(20, 20, 20, 0.28);
+  color: var(--zp-gold-soft);
+  font-size: 1.12rem;
+}
+
+.adventure h4 + p {
+  margin: -0.95rem 0 0;
+  padding: 1rem;
+  border: 1px solid rgba(255, 204, 102, 0.16);
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  background: rgba(16, 16, 16, 0.24);
+  line-height: 1.7;
+}
+
+.adventure h4:has(+ p) {
+  border-radius: 10px 10px 0 0;
+}
+
+.character-slider {
+  top: 76px;
+  right: 16px;
+  width: 300px;
+  height: calc(100vh - 92px);
+  border: 1px solid var(--zp-border);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(255, 204, 102, 0.08), rgba(20, 20, 20, 0.24)),
+    rgba(38, 38, 38, 0.92);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42);
+}
+
+.character-slider img {
+  border: 1px solid rgba(255, 204, 102, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.24);
+  cursor: zoom-in;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.character-slider img:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 204, 102, 0.68);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.map-page {
+  padding-top: 92px;
+}
+
+.map-container {
+  border-radius: 14px;
+}
+
+.map-image-wrapper {
+  border: 1px solid rgba(255, 204, 102, 0.2);
+}
+
+.home-popup__panel,
+.lightbox-caption {
+  border: 1px solid var(--zp-border-strong);
+  background:
+    linear-gradient(145deg, rgba(68, 49, 23, 0.82), rgba(22, 22, 22, 0.92)),
+    rgba(43, 43, 43, 0.92);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.75);
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 204, 102, 0.2);
+  background:
+    linear-gradient(180deg, rgba(42, 42, 42, 0.96), rgba(28, 28, 28, 0.96));
+}
+
+@media (max-width: 1800px) {
+  .character-page {
+    padding-right: 0;
+  }
+
+  .character-slider {
+    top: 68px;
+    right: 8px;
+    width: min(320px, calc(100vw - 16px));
+    height: calc(100vh - 84px);
+  }
+}
+
+@media (max-width: 899px) {
+  .content,
+  .character-page {
+    width: min(620px, calc(100% - 28px));
+    padding-top: 82px;
+    padding-bottom: 1.5rem;
+  }
+
+  .character-container,
+  .content__section,
+  .panel {
+    padding: 1.15rem;
+  }
+
+  .character-container h2.character-name,
+  .character-name,
+  .adventures-title {
+    text-align: center;
+  }
+
+  .adventure h4 {
+    padding: 0.8rem 0.9rem;
+  }
+
+  .adventure h4 + p {
+    padding: 0.9rem;
+  }
+}
+
 /* ===== SJEDNOCENY STYL PODSTRANEK ===== */
 .site-shell header {
   border-bottom: 1px solid rgba(255, 204, 102, 0.2);
