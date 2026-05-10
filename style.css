@@ -422,6 +422,172 @@ main {
   margin-bottom: 0.5rem;
 }
 
+.cheatsheet-page {
+  max-width: 1180px;
+}
+
+.cheatsheet-hero {
+  border: 1px solid rgba(255, 204, 102, 0.28);
+  background:
+    linear-gradient(135deg, rgba(255, 204, 102, 0.11), rgba(43, 43, 43, 0.32)),
+    rgba(43, 43, 43, 0.3);
+}
+
+.cheatsheet-hero h2 {
+  margin: 0 0 0.75rem;
+  color: #ffcc66;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.cheatsheet-hero p {
+  max-width: 900px;
+  line-height: 1.65;
+}
+
+.cheatsheet-kicker {
+  margin: 0 0 0.35rem;
+  color: #ffdd8a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.cheatsheet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.cheatsheet-card {
+  height: 100%;
+  margin-bottom: 0;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+}
+
+.cheatsheet-card ul,
+.cheatsheet-timeline {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.55;
+}
+
+.cheatsheet-card li,
+.cheatsheet-timeline li {
+  margin-bottom: 0.55rem;
+}
+
+.cheatsheet-card li:last-child,
+.cheatsheet-timeline li:last-child {
+  margin-bottom: 0;
+}
+
+.formula {
+  margin: 0 0 0.9rem;
+  padding: 0.65rem 0.8rem;
+  border-left: 3px solid #ffcc66;
+  background: rgba(0, 0, 0, 0.24);
+  color: #ffdd8a;
+  line-height: 1.45;
+}
+
+.turn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.turn-card {
+  padding: 1rem;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+  border-radius: 10px;
+  background: rgba(20, 20, 20, 0.28);
+}
+
+.turn-card h3 {
+  margin: 0 0 0.5rem;
+  color: #ffcc66;
+}
+
+.turn-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cheatsheet-card strong,
+.cheatsheet-timeline strong {
+  color: #ffdd8a;
+}
+
+.timeline-card {
+  margin-top: 1.5rem;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+}
+
+.summary-page {
+  max-width: 1040px;
+}
+
+.summary-hero {
+  border: 1px solid rgba(255, 204, 102, 0.28);
+  background:
+    linear-gradient(135deg, rgba(255, 204, 102, 0.11), rgba(43, 43, 43, 0.32)),
+    rgba(43, 43, 43, 0.3);
+}
+
+.summary-hero h2 {
+  margin: 0 0 0.75rem;
+  color: #ffcc66;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.summary-hero p,
+.summary-card p,
+.summary-section p {
+  line-height: 1.7;
+}
+
+.summary-kicker {
+  margin: 0 0 0.35rem;
+  color: #ffdd8a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  height: 100%;
+  margin-bottom: 0;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+}
+
+.summary-section {
+  border: 1px solid rgba(255, 204, 102, 0.22);
+}
+
+.summary-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+
+.summary-list li {
+  margin-bottom: 0.55rem;
+}
+
+.summary-list strong {
+  color: #ffdd8a;
+}
+
 .note {
   color: #aaa;
   font-style: italic;
@@ -825,6 +991,18 @@ main {
     min-height: 118px;
   }
 
+  .cheatsheet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .turn-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
   .home-popup {
     padding: 0.9rem;
   }
@@ -850,5 +1028,229 @@ main {
   .map-lens {
     width: 220px;
     height: 132px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .detail-page.has-media-panel .character-page {
+    padding-right: 0;
+  }
+}
+
+/* ===== SJEDNOCENY STYL PODSTRANEK ===== */
+.site-shell header {
+  border-bottom: 1px solid rgba(255, 204, 102, 0.2);
+  background:
+    linear-gradient(180deg, rgba(49, 49, 49, 0.96), rgba(32, 32, 32, 0.96));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+.site-shell .header-title {
+  font-size: clamp(1.55rem, 3.5vw, 2.6rem);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.72);
+}
+
+.site-shell .menu-button,
+.site-shell .images-button {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 204, 102, 0.28);
+  border-radius: 10px;
+  background: rgba(20, 20, 20, 0.3);
+  line-height: 1;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.site-shell .menu-button:hover,
+.site-shell .images-button:hover,
+.site-shell .menu-button:focus-visible,
+.site-shell .images-button:focus-visible {
+  color: #ffcc66;
+  border-color: rgba(255, 204, 102, 0.75);
+  background: rgba(255, 204, 102, 0.1);
+  outline: none;
+}
+
+.detail-page .character-page {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 92px 0 2rem;
+  align-items: flex-start;
+}
+
+.detail-page.has-media-panel .character-page {
+  padding-right: 344px;
+}
+
+.detail-page .character-container,
+.text-page .content__section,
+.map-detail-page .map-container {
+  border: 1px solid rgba(255, 204, 102, 0.24);
+  background:
+    linear-gradient(145deg, rgba(255, 204, 102, 0.08), rgba(20, 20, 20, 0.25)),
+    rgba(43, 43, 43, 0.44);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+}
+
+.detail-page .character-container {
+  width: 100%;
+  max-width: 920px;
+  padding: clamp(1.25rem, 3vw, 2.4rem);
+  border-radius: 12px;
+}
+
+.detail-page .character-container h2.character-name,
+.detail-page .character-name {
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(255, 204, 102, 0.24);
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: left;
+}
+
+.detail-page .character-description,
+.detail-page .character-container > p {
+  margin: 0 0 1.3rem;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+  line-height: 1.72;
+}
+
+.detail-page .adventures-title {
+  margin: 2rem 0 1rem;
+  color: #ffcc66;
+  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+  text-align: left;
+}
+
+.detail-page .adventure-list {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.detail-page .adventure-list h4 {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+  border-radius: 10px 10px 0 0;
+  background:
+    linear-gradient(90deg, rgba(255, 204, 102, 0.12), rgba(20, 20, 20, 0.22)),
+    rgba(20, 20, 20, 0.28);
+  color: #ffdd8a;
+  font-size: 1.12rem;
+}
+
+.detail-page .adventure-list h4 + p {
+  margin: -0.95rem 0 0;
+  padding: 1rem;
+  border: 1px solid rgba(255, 204, 102, 0.16);
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  background: rgba(16, 16, 16, 0.24);
+  line-height: 1.7;
+}
+
+.detail-page .adventure-list h4:not(:has(+ p)) {
+  border-radius: 10px;
+}
+
+.detail-page .character-slider {
+  top: 76px;
+  right: 16px;
+  width: 300px;
+  height: calc(100vh - 92px);
+  border: 1px solid rgba(255, 204, 102, 0.24);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(255, 204, 102, 0.08), rgba(20, 20, 20, 0.24)),
+    rgba(38, 38, 38, 0.92);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42);
+}
+
+.detail-page .character-slider img {
+  border: 1px solid rgba(255, 204, 102, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.24);
+  cursor: zoom-in;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.detail-page .character-slider img:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 204, 102, 0.68);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.text-page .content {
+  max-width: 980px;
+}
+
+.text-page .content__section {
+  padding: clamp(1.1rem, 2.4vw, 1.8rem);
+  border-radius: 12px;
+}
+
+.text-page .content__section h2,
+.text-page .content__section h3 {
+  color: #ffcc66;
+}
+
+.text-page .content__section p {
+  line-height: 1.72;
+}
+
+.map-detail-page .map-page {
+  padding-top: 92px;
+}
+
+.map-detail-page .map-container {
+  border-radius: 14px;
+}
+
+.map-detail-page .map-image-wrapper {
+  border: 1px solid rgba(255, 204, 102, 0.2);
+}
+
+@media (max-width: 899px) {
+  .detail-page .character-page,
+  .detail-page.has-media-panel .character-page {
+    width: min(620px, calc(100% - 28px));
+    padding: 82px 0 1.5rem;
+  }
+
+  .detail-page .character-container {
+    padding: 1.15rem;
+  }
+
+  .detail-page .character-container h2.character-name,
+  .detail-page .character-name {
+    text-align: center;
+  }
+
+  .detail-page .adventure-list h4 {
+    padding: 0.8rem 0.9rem;
+  }
+
+  .detail-page .adventure-list h4 + p {
+    padding: 0.9rem;
+  }
+
+  .detail-page .character-slider {
+    top: 68px;
+    right: 8px;
+    width: min(320px, calc(100vw - 16px));
+    height: calc(100vh - 84px);
+  }
+}
+
+@media (max-width: 1800px) {
+  .detail-page.has-media-panel .character-page {
+    padding-right: 0;
   }
 }
