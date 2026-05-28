@@ -977,6 +977,7 @@ main {
   min-height: 0;
   border: 0;
   border-radius: 0;
+  background: transparent;
   box-shadow: none;
 }
 
@@ -996,6 +997,12 @@ main {
   z-index: 1;
   width: 100%;
   height: auto;
+}
+
+.map-full-body .leaflet-container,
+.map-full-body .leaflet-pane,
+.map-full-body .leaflet-tile-pane {
+  background: transparent;
 }
 
 .map-full-body .site-footer {
