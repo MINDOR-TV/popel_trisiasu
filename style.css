@@ -916,6 +916,13 @@ main {
   box-sizing: border-box;
 }
 
+.map-page--full {
+  height: calc(100vh - 60px);
+  min-height: 0;
+  padding: 60px 0 0;
+  display: block;
+}
+
 .map-container {
   width: 100%;
   max-width: 1200px;
@@ -963,6 +970,36 @@ main {
   border-radius: 12px;
   background: #121212;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.leaflet-map--full {
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.map-full-body {
+  overflow: hidden;
+}
+
+.map-full-body .map-page--full {
+  height: auto;
+  min-height: 0;
+  padding: 0;
+}
+
+.map-full-body .leaflet-map--full {
+  position: fixed;
+  inset: 60px 0 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.map-full-body .site-footer {
+  display: none;
 }
 
 .leaflet-map.leaflet-container {
@@ -1104,6 +1141,11 @@ main {
   .leaflet-map {
     height: 72vh;
     min-height: 420px;
+  }
+
+  .leaflet-map--full {
+    height: 100%;
+    min-height: 0;
   }
 }
 
