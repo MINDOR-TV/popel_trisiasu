@@ -1,6 +1,6 @@
 // === Globální favicon pro všechny podstránky ===
 (function setGlobalFavicon() {
-  const url = "https://mindor-tv.github.io/popel_trisiasu/assets/z_popela_logo.png";
+  const url = "https://mindor-tv.github.io/popel_trisiasu/assets/z_popela_logo.webp";
 
   // smažeme staré favicony (pokud nějaké jsou)
   document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]').forEach(el => el.remove());
@@ -41,7 +41,7 @@
   // iOS/Android PWA dlaždice (nebývá na škodu)
   upsert("apple-touch-icon", url, {});
 
-})("https://mindor-tv.github.io/popel_trisiasu/assets/z_popela_logo.png");
+})("https://mindor-tv.github.io/popel_trisiasu/assets/z_popela_logo.webp");
 
 
 // --- Konfigurace menu ---
@@ -146,11 +146,11 @@ const homePopupData = {
   druzina: {
     title: "Družina",
     items: [
-      { name: "Aeriel", url: "postavy/aeriel/character.html", banner: "assets/home-banners/aeriel.png" },
-      { name: "Bogdan", url: "postavy/bogdan/character.html", banner: "assets/home-banners/bogdan.png" },
-      { name: "Celeana Dawnshield", url: "postavy/celeana/character.html", banner: "assets/home-banners/celeana.png" },
-      { name: "Ofélie", url: "postavy/ofelie/character.html", banner: "assets/home-banners/ofelie.png" },
-      { name: "Thalor", url: "postavy/thalor/character.html", banner: "assets/home-banners/thalor.png" }
+      { name: "Aeriel", url: "postavy/aeriel/character.html", banner: "assets/home-banners/aeriel.webp" },
+      { name: "Bogdan", url: "postavy/bogdan/character.html", banner: "assets/home-banners/bogdan.webp" },
+      { name: "Celeana Dawnshield", url: "postavy/celeana/character.html", banner: "assets/home-banners/celeana.webp" },
+      { name: "Ofélie", url: "postavy/ofelie/character.html", banner: "assets/home-banners/ofelie.webp" },
+      { name: "Thalor", url: "postavy/thalor/character.html", banner: "assets/home-banners/thalor.webp" }
     ]
   },
   mapy: {
