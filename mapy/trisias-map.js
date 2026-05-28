@@ -106,7 +106,7 @@ if (trisiasMapElement && window.L) {
       x: 955,
       y: 735,
       url: "../mista/trisias/monarynske_kralovstvi/prachtemir/prachtemir.html",
-      description: "Město na cestě mezi severem a Morvallatem.",
+      description: "Pohraniční městečko mezi Allveirem a Morvallatem.",
     },
     {
       name: "Záhořlice",
