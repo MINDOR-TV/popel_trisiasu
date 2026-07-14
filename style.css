@@ -625,7 +625,7 @@ main {
 .character-container {
   width: 90%;
   max-width: 1000px;              /* široký rámeček */
-  background: rgba(43, 43, 43, 0.1); /* tmavý, lehce průhledný */
+  background: rgba(43, 43, 43, 0.6); /* tmavý, lehce průhledný */
   backdrop-filter: blur(2px);
   border-radius: 16px;
   padding: 2rem 3rem;
