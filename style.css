@@ -1328,7 +1328,7 @@ body:not(:has(.character-slider)) .character-page {
   gap: 0.95rem;
 }
 
-.adventure h4 {
+.adventure h4 a{
   margin: 0;
   padding: 0.85rem 1rem;
   border: 1px solid rgba(255, 204, 102, 0.22);
