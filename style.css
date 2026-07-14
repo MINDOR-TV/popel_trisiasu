@@ -1328,6 +1328,18 @@ body:not(:has(.character-slider)) .character-page {
   gap: 0.95rem;
 }
 
+.adventure h4 {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 204, 102, 0.22);
+  border-radius: 10px;
+  background:
+    linear-gradient(90deg, rgba(255, 204, 102, 0.12), rgba(20, 20, 20, 0.22)),
+    rgba(20, 20, 20, 0.28);
+  color: var(--zp-gold-soft);
+  font-size: 1.12rem;
+}
+
 .adventure h4 a{
   margin: 0;
   padding: 0.85rem 1rem;
