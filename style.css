@@ -200,11 +200,14 @@ main {
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: clamp(150px, 18vw, 230px);
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .home-card {
-  min-height: clamp(150px, 18vw, 230px);
+  min-height: 0;
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1100,10 +1103,11 @@ main {
 
   .home-grid {
     grid-template-columns: 1fr;
+    grid-auto-rows: 118px;
   }
 
   .home-card {
-    min-height: 118px;
+    min-height: 0;
   }
 
   .cheatsheet-grid {
