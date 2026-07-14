@@ -47,6 +47,7 @@
 // --- Konfigurace menu ---
 const menuData = {
   "Hlavní stránka": "https://mindor-tv.github.io/popel_trisiasu/index.html",
+  "Příběhy dobrodruhů": "https://mindor-tv.github.io/popel_trisiasu/pribehy_dobrodruhu.html",
   "Družina": [
     //{ name: "Stogorin", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/stogorin/character.html" },
     { name: "Aeriel", url: "https://mindor-tv.github.io/popel_trisiasu/postavy/aeriel/character.html" },
