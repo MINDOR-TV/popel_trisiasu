@@ -1170,8 +1170,8 @@ main {
 :root {
   --zp-gold: #ffcc66;
   --zp-gold-soft: #ffdd8a;
-  --zp-panel: rgba(43, 43, 43, 0.44);
-  --zp-panel-strong: rgba(20, 20, 20, 0.34);
+  --zp-panel: rgba(43, 43, 43, 0.34);
+  --zp-panel-strong: rgba(20, 20, 20, 0.26);
   --zp-border: rgba(255, 204, 102, 0.24);
   --zp-border-strong: rgba(255, 204, 102, 0.45);
   --zp-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
@@ -1251,9 +1251,9 @@ header {
 .map-container {
   border: 1px solid var(--zp-border);
   background:
-    linear-gradient(145deg, rgba(255, 204, 102, 0.08), rgba(20, 20, 20, 0.25)),
+    linear-gradient(145deg, rgba(255, 204, 102, 0.045), rgba(20, 20, 20, 0.18)),
     var(--zp-panel);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
   box-shadow: var(--zp-shadow);
 }
 
@@ -1338,8 +1338,8 @@ body:not(:has(.character-slider)) .character-page {
   border: 1px solid rgba(255, 204, 102, 0.22);
   border-radius: 10px;
   background:
-    linear-gradient(90deg, rgba(255, 204, 102, 0.12), rgba(20, 20, 20, 0.22)),
-    rgba(20, 20, 20, 0.28);
+    linear-gradient(90deg, rgba(255, 204, 102, 0.07), rgba(20, 20, 20, 0.16)),
+    rgba(20, 20, 20, 0.22);
   color: var(--zp-gold-soft);
   font-size: 1.12rem;
 }
@@ -1355,7 +1355,7 @@ body:not(:has(.character-slider)) .character-page {
   border: 1px solid rgba(255, 204, 102, 0.16);
   border-top: 0;
   border-radius: 0;
-  background: rgba(16, 16, 16, 0.24);
+  background: rgba(16, 16, 16, 0.18);
   line-height: 1.7;
 }
 
@@ -1530,9 +1530,9 @@ body:not(:has(.character-slider)) .character-page {
 .map-detail-page .map-container {
   border: 1px solid rgba(255, 204, 102, 0.24);
   background:
-    linear-gradient(145deg, rgba(255, 204, 102, 0.08), rgba(20, 20, 20, 0.25)),
-    rgba(43, 43, 43, 0.44);
-  backdrop-filter: blur(3px);
+    linear-gradient(145deg, rgba(255, 204, 102, 0.045), rgba(20, 20, 20, 0.18)),
+    rgba(43, 43, 43, 0.34);
+  backdrop-filter: blur(2px);
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
 }
 
@@ -1581,8 +1581,8 @@ body:not(:has(.character-slider)) .character-page {
   border: 1px solid rgba(255, 204, 102, 0.22);
   border-radius: 10px 10px 0 0;
   background:
-    linear-gradient(90deg, rgba(255, 204, 102, 0.12), rgba(20, 20, 20, 0.22)),
-    rgba(20, 20, 20, 0.28);
+    linear-gradient(90deg, rgba(255, 204, 102, 0.07), rgba(20, 20, 20, 0.16)),
+    rgba(20, 20, 20, 0.22);
   color: #ffdd8a;
   font-size: 1.12rem;
 }
@@ -1593,7 +1593,7 @@ body:not(:has(.character-slider)) .character-page {
   border: 1px solid rgba(255, 204, 102, 0.16);
   border-top: 0;
   border-radius: 0 0 10px 10px;
-  background: rgba(16, 16, 16, 0.24);
+  background: rgba(16, 16, 16, 0.18);
   line-height: 1.7;
 }
 
