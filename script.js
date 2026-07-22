@@ -118,7 +118,7 @@ const menuData = {
     { name: "Vaelor Minstrell", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/vaelor_minstrell/vaelor_minstrell.html" }
   ],
   "Božstvo": [
-    { name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
+    //{ name: "Celkový přehled bohů", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/bohove.html" },
     { "Vyšší Pantheon": [
       { name: "Marlůvar", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/marluvar.html" },
       { name: "Ilnur", url: "https://mindor-tv.github.io/popel_trisiasu/bohove/ilnur.html" },
@@ -247,12 +247,12 @@ const homePopupData = {
   bozstvo: {
     title: "Božstvo",
     groups: [
-      {
+      /*{
         title: "Přehled",
         items: [
           { name: "Celkový přehled bohů", url: "bohove/bohove.html" }
         ]
-      },
+      },*/
       {
         title: "Vyšší Pantheon",
         items: [
