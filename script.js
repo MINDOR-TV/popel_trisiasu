@@ -229,7 +229,7 @@ const homePopupData = {
       { name: "Chaol Dawnshield", url: "NPC/chaol/chaol.html" },
       { name: "Dudo", url: "NPC/dudo/dudo.html" },
       { name: "Eliška ze mlejna", url: "NPC/eliska_ze_mlejna/eliska_ze_mlejna.html" },
-      //{ name: "Finley", url: "NPC/finley/finley.html" },
+      { name: "Finley", url: "NPC/finley/finley.html" },
       { name: "Folken", url: "NPC/folken/folken.html" },
       { name: "Jindřich ze mlejna", url: "NPC/jindrich_ze_mlejna/jindrich_ze_mlejna.html" },
       { name: "Kalkstein Školastyk", url: "NPC/skolastyk/skolastyk.html" },
