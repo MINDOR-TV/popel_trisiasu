@@ -102,7 +102,7 @@ const menuData = {
     { name: "Benjamin Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/benjamin/benjamin.html" },
     { name: "Chaol Dawnshield", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/chaol/chaol.html" },
     { name: "Dudo", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/dudo/dudo.html" },
-    //{ name: "Finley", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/finley/finley.html" },
+    { name: "Finley", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/finley/finley.html" },
     { name: "Eliška ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/eliska_ze_mlejna/eliska_ze_mlejna.html" },
     { name: "Folken", url: "https://mindor-tv.github.io/popel_trisiasu/NPC/folken/folken.html" },
     { name: "Jindřich ze mlejna", url:"https://mindor-tv.github.io/popel_trisiasu/NPC/jindrich_ze_mlejna/jindrich_ze_mlejna.html" },
