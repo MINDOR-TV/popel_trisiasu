@@ -16,7 +16,7 @@ if (trisiasMapElement && window.L) {
     attributionControl: false,
   });
 
-  L.imageOverlay("../assets/mapy/Trisias2.webp", bounds).addTo(map);
+  L.imageOverlay("../assets/mapy/trisisas2.webp", bounds).addTo(map);
   map.fitBounds(bounds);
   map.setMaxBounds([
     [-220, -220],
